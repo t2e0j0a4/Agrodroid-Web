@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}","./public/*"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        leaguespartan: ["League Spartan", "serif"],
+        nunitosans: ["Nunito Sans" , "serif"],
+      },
+    },
   },
   plugins: [],
 }
