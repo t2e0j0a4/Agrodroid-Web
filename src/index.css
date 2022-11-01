@@ -2,14 +2,46 @@
 @tailwind components;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body::-webkit-scrollbar{
-    width: 1rem;
+html,body{
+  scroll-behavior: smooth;
+}
+
+
+/* body::-webkit-scrollbar{
+    width: 0.5rem;
 }
 body::-webkit-scrollbar-track{
     background-color: white;
 }
 body::-webkit-scrollbar-thumb{
-  color: black;
+  color: rgb(37, 37, 37);
+} */
+
+body{
+  overflow-x: hidden;
+}
+
+#header{
+  background-color: #0077b5;
+  background-image: url('./Images/Sample.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+@media (min-aspect-ratio: 16/9){
+  #back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  #back-video{
+    width: auto;
+    height: 100%;
+  }
 }
 
 .animated-arrows{
@@ -100,6 +132,41 @@ body::-webkit-scrollbar-thumb{
 
 #linkedin:hover{
   color: #0077b5;
+}
+
+#twitter{
+  color: black;
+}
+
+#twitter:hover{
+  color: #1DA1F2;
+}
+
+#facebook{
+  color: black;
+}
+
+#facebook:hover{
+  color: #4267B2;
+}
+
+/* #header{
+  background-image: url('./Images/Sample.jpg');
+  background-size: cover;
+  background-position: top
+} */
+
+.rotate {
+  animation: rotation 30s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
   
 @tailwind utilities;
