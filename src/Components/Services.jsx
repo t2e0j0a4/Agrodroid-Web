@@ -15,7 +15,7 @@ const Services = () => {
             alt="Services"
             className="rotate object-cover w-[100%] m-auto"
           />
-          <span className="absolute text-[#004346] font-leaguespartan lg:text-3xl sm:text-[7vmin]" data-aos="zoom-in" data-aos-duration="600">
+          <span className="absolute text-[#004346] font-leaguespartan lg:text-3xl sm:text-[8vmin]" data-aos="zoom-in" data-aos-duration="600">
             Services
           </span>
         </div>

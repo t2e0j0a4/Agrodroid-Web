@@ -3,38 +3,32 @@ import React from "react";
 const advantages = [
   {
     id: 1,
-    head: "Heading",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet odit ea voluptate numquam. Aut.",
+    head: "Services that are Fully Autonomous",
     animation : "zoom-out-right"    
   },
   {
     id: 2,
-    head: "Heading",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet odit ea voluptate numquam. Aut.",
+    head: "Purely Solar-Powered, CO2-Neutral Technology",
     animation : "zoom-in"    
   },
   {
     id: 3,
-    head: "Heading",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet odit ea voluptate numquam. Aut.",
+    head: "Increased Production",
     animation : "zoom-out-left"
   },
   {
     id: 4,
-    head: "Heading",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet odit ea voluptate numquam. Aut.",
+    head: "Boosts Agriculturalists Income by 40%",
     animation : "zoom-out-right"
   },
   {
     id: 5,
-    head: "Heading",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet odit ea voluptate numquam. Aut.",
+    head: "Agriculture Without Hustle",
     animation : "zoom-in"
   },
   {
     id: 6,
-    head: "Heading",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet odit ea voluptate numquam. Aut.",
+    head: "Time Efficient",
     animation : "zoom-out-left"    
   },
 ];
@@ -57,20 +51,20 @@ const Advantages = () => {
           The Smart Way to get your Benefits
         </div>
 
-        <div className="rows-wrapper w-[100%] h-auto mb-16 md:mb-18">
-          <div className="box-wrapper pl-8 pr-8 md:gap-x-6 pt-16 w-[100%] md:grid md:grid-rows-1 md:grid-cols-3 md:gap-y-16 sm:grid-rows-3 sm:grid-cols-1 sm:gap-y-6">
+        <div className="rows-wrapper w-[100%] h-auto mb-20 md:mb-12">
+          <div className="box-wrapper pl-8 pr-8 md:gap-x-6 pt-16 w-[100%] md:grid md:grid-rows-1 md:grid-cols-3 md:gap-y-8 sm:grid-rows-3 sm:grid-cols-1 sm:gap-y-6">
             {advantages.map((each) => {
               return (
                 <div
                   key={each.id}
-                  className="box w-[90%] mx-auto hover:scale-105 select-none md:w-[100%] h-[100%] bg-green-400 relative shadow-md
-                rounded-md mb-10 md:mb-6" data-aos={each.animation} data-aos-duration="600" data-aos-offset="-100"
+                  className="box w-[90%] mx-auto select-none md:w-[100%] h-[120px] bg-green-400 relative shadow-md
+                rounded-md mb-10 md:mb-12" data-aos={each.animation} data-aos-duration="600" data-aos-offset="-100"
                 >
                   <div className="content z-[10] text-black p-3  flex flex-col items-start justify-around w-[100%] space-y-4">
-                    <span className="break-words head font-[Poppins] font-semibold text-2xl z-[3]">
+                    <span className="break-words head font-leaguespartan font-semibold text-2xl z-[3]">
                       {each.head}
                     </span>
-                    <span className="info z-[3]break-words ">{each.info}</span>
+                    
                   </div>
                   <span className="absolute font-leaguespartan text-white text-8xl text-opacity-30 z-[0] top-10 right-0 mt-0 mr-8 text-center">
                     {each.id}

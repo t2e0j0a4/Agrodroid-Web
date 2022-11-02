@@ -48,11 +48,11 @@ const About = () => {
           </div>
           <div className="flex flex-row items-center justify-center flex-wrap lg:flex-nowrap my-2 mx-2">
             <div
-              className="matter sm:w-[80%] lg:w-[50%] text-2xl ml-4 order-2 lg:order-1 text-center lg:text-left text-black font-semibold "
+              className="matter w-[80%] lg:w-[50%] text-2xl ml-4 order-2 lg:order-1 text-center lg:text-left text-black font-semibold "
               id="text-image" data-aos="zoom-in" data-aos-duration="800"
             >
-              <span className="text-5xl font-leaguespartan font-bold">
-                AgroDroid
+              <span id='agrodroid' className="text-5xl font-leaguespartan font-bold">
+                Agrodroid
               </span>{" "}
               is an autonomous rover robot that can sow seeds, weed fields,
               fertilize crops with precision spraying and solid fertilization,

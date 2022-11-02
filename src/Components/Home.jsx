@@ -44,7 +44,7 @@ const Home = ({navbar}) => {
               } text-center`}
             >
               {Links.map((link) => (
-                <li key={link.name} className="md:ml-8 text-xl md:my-0 my-14">
+                <li key={link.name} id="navlink" className="md:ml-8 text-xl md:my-0 my-14 ">
                   <a
                     href={link.link}
                     className={navbar === true ?"text-gray-800" : "text-gray-800 md:text-white"}

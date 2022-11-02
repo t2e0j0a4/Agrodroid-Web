@@ -27,8 +27,6 @@ body{
   background-repeat: no-repeat;
 }
 
-
-
 @media (min-aspect-ratio: 16/9){
   #back-video{
     width: 100%;
