@@ -22,7 +22,6 @@ body{
 }
 
 #header{
-  background-color: #0077b5;
   background-image: url('./Images/Sample.jpg');
   background-size: cover;
   background-repeat: no-repeat;
