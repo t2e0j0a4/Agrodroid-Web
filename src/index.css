@@ -22,7 +22,7 @@ body{
 }
 
 #header{
-  background-image: url('./Images/Sample.jpg');
+  background-image: url('./Images/Smaple.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -133,19 +133,23 @@ body{
   color: #0077b5;
 }
 
-#twitter{
-  color: black;
+#linkedin-foo{
+  color: #0077b5;
 }
 
-#twitter:hover{
+#instagram-foo{
+  padding: 2px;
+  background: linear-gradient(to top , #feda75 , #fa7e1e , #d62976 , #962fbf , #4f5bd5);
+  border-radius: 10px;
+  color: white;
+}
+
+
+#twitter{
   color: #1DA1F2;
 }
 
 #facebook{
-  color: black;
-}
-
-#facebook:hover{
   color: #4267B2;
 }
 

@@ -47,7 +47,7 @@ const Home = ({navbar}) => {
                 <li key={link.name} className="md:ml-8 text-xl md:my-0 my-14">
                   <a
                     href={link.link}
-                    className={navbar === true ?"text-gray-800" : "text-gray-800 md:text-gray-100"}
+                    className={navbar === true ?"text-gray-800" : "text-gray-800 md:text-white"}
                     target="_parent"
                     onClick={() => {
                       setOpen(!open);
