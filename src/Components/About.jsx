@@ -9,17 +9,17 @@ import Team from "../Images/Team.png";
 
 
 
-import Partner1 from "../Images/Partner-1.png";
+import Partner1 from "../Images/Partner-1-Edited.png";
 import Partner2 from "../Images/Partner-2.png";
-import Partner3 from "../Images/Partner-3.png";
-import Partner4 from "../Images/Partner-4.png";
+import Partner3 from "../Images/Partner-4.png";
+import Partner4 from "../Images/Partner-3.png";
 
 
 const teamMembers = [
-    {key:1, name:"Mahesh Vuppu" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", "desc":"Extremely ambitious to accomplish great things through serial entrepreneurship." , role:"Co-Founder" , animation:"fade-left" , duration:800},
-    {key:2, name:"Adhnan Mahboob.M" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, porro!" , role:"Co-Founder" , animation:"fade-right" , duration:600},
-    {key:3, name:"Jeshwanth Reddy.K" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, porro!" , role:"Co-Founder" , animation:"fade-left" , duration:800},
-    {key:4, name:"Naveen Gadala" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, porro!" , role:"Co-Founder" , animation:"fade-right" , duration:600}
+    {key:1, name:"Mahesh Vuppu" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", desc:"Extremely ambitious to accomplish great things through serial entrepreneurship." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
+    {key:2, name:"Adhnan Mahboob.M" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", desc:"His personal interests include business, marketing, and socialising. He is quite knowledgeable about stocks." , role:"Co-Founder" , animation:"zoom-out" , duration:600},
+    {key:3, name:"Naveen Gadala" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", desc:"He conducts effective market and consumer surveys and has outstanding interpersonal skills." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
+    {key:4, name:"Jeshwanth Reddy.K" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", desc:"Enthusiastic, a person who is really passionate, enjoys working with a team, and is punctual" , role:"Co-Founder" , animation:"zoom-out" , duration:600}
 ]
 
 
@@ -33,25 +33,25 @@ const About = () => {
           className="w-[100%] min-h-screen bg-[#FFFFFF] text-black px-4 pb-2 pt-14"
           
         >
-          <div className="text-3xl font-nunitosans mt-4 my-2 text-[#004346] ml-4 pt-2" data-aos="fade-right" data-aos-duration="400">
+          <div className="text-3xl font-nunitosans mt-4 my-2 text-[#004346] ml-4 pt-2" data-aos="zoom-in" data-aos-duration="400">
             About
           </div>
           <div
             id="sub-head"
-            className="w-28 h-[0.15rem] rounded bg-[#f29f05] mb-2 ml-4 " data-aos="fade-right" data-aos-duration="700"
+            className="w-28 h-[0.15rem] rounded bg-[#f29f05] mb-2 ml-4 " data-aos="zoom-in" data-aos-duration="700"
           ></div>
           <div
             id="sub-head"
-            className="w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 " data-aos="fade-right" data-aos-duration="900"
+            className="w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 " data-aos="zoom-in" data-aos-duration="900"
           >
             What we're doing?
           </div>
-          <div className="flex flex-row items-center justify-center flex-wrap lg:flex-nowrap my-2 mx-2">
+          <div className="flex flex-row items-center justify-center flex-wrap lg:flex-nowrap mt-6 lg:mt-2 mb-2 mx-2">
             <div
-              className="matter w-[80%] lg:w-[50%] text-2xl ml-4 order-2 lg:order-1 text-center lg:text-left text-black font-semibold "
-              id="text-image" data-aos="zoom-in" data-aos-duration="800"
+              className="matter w-[100%] lg:w-[50%] text-2xl ml-4 order-2 lg:order-1 text-center lg:text-left text-black font-semibold"
+              id="text-image" data-aos="zoom-out" data-aos-duration="800"
             >
-              <span id='agrodroid' className="text-5xl font-leaguespartan font-bold">
+              <span id='agrodroid' className="text-4xl font-leaguespartan font-bold text-center">
                 Agrodroid
               </span>{" "}
               is an autonomous rover robot that can sow seeds, weed fields,
@@ -61,7 +61,7 @@ const About = () => {
             <img
               className="image-about lg:w-[55%] w-[100%] mr-2 order-1 lg:order-2"
               src={about}
-              alt="about-us" data-aos="zoom-in-up" data-aos-duration="800"
+              alt="about-us" data-aos="zoom-out" data-aos-duration="800"
             />
           </div>
           <div className="animated-arrows relative">
@@ -73,17 +73,17 @@ const About = () => {
 
         {/* Vision and Mission Starts */}
         <section id="vision-and-mission" className="w-[100%] min-h-screen bg-white px-4 pb-2 pt-16">
-            <div className="main-head-v-m text-2xl font-nunitosans font-semibold text-[#004346] text-center" data-aos="fade-right" data-aos-duration="400">Vision and Mission</div>
-            <div data-aos="fade-right" data-aos-duration="700" className="w-28 h-[0.15rem] bg-[#f29f05] rounded text-center m-auto mb-4 mt-2"></div>
+            <div className="main-head-v-m text-2xl font-nunitosans font-semibold text-[#004346] text-center" data-aos="zoom-in" data-aos-duration="400">Vision and Mission</div>
+            <div data-aos="zoom-in" data-aos-duration="700" className="w-28 h-[0.15rem] bg-[#f29f05] rounded text-center m-auto mb-4 mt-2"></div>
             <div className="outer-box  flex flex-row my-3 justify-center items-center flex-wrap md:flex-nowrap space-y-20 md:space-y-0">
               <div className="inner w-[90%] md:w-[50%] h-[auto] flex flex-col items-center justify-center">
-                    <img src={Binoculars} alt="Vision" className="w-[40%]" data-aos="zoom-in-up" data-aos-duration="800"/>
+                    <img src={Binoculars} alt="Vision" className="w-[40%]" data-aos="zoom-out" data-aos-duration="800"/>
                     <div className="inner-head text-lg font-bold my-6 italic text-center font-leaguespartan">Vision</div>
                     <div className="sub-head-line text-md w-[70%] text-center font-semibold">Enlight the technology in farming to make it independent of labour.</div>
               </div>
               <div className="line w-1 h-96 bg-black rounded hidden md:block"></div>
               <div className="inner w-[85%] md:w-[50%] h-[auto] flex flex-col items-center justify-center">
-                    <img src={Target} alt="Mission" className="w-[60%] md:w-[50%] lg:w-[40%] " data-aos="zoom-in-up" data-aos-duration="800"/>
+                    <img src={Target} alt="Mission" className="w-[60%] md:w-[50%] lg:w-[40%] " data-aos="zoom-out" data-aos-duration="800"/>
                     <div className="inner-head text-lg font-bold my-6 italic text-center font-leaguespartan">Mission</div>
                     <div className="sub-head-line text-md w-[70%] text-center font-semibold">To offer technical solutions for smart agriculture as a service to grow up its Production quality and revenues for farmers with 0% mental stress.</div>
               </div>
@@ -98,7 +98,7 @@ const About = () => {
 
         {/* Our Team Starts */}
         <section id="team-section" className="w-[100%] min-h-screen px-4 pb-2 pt-8">
-          <div className="logo w-[30%] md:w-[15%] mx-auto py-3" data-aos="zoom-in-down" data-aos-duration="800">
+          <div className="logo w-[30%] md:w-[15%] mx-auto py-3" data-aos="zoom-out" data-aos-duration="800">
             <img src={Team} alt="Team"/>
           </div>
           <div className="team-member-cards ml-4 mt-8 grid sm:grid-cols-1 sm:grid-rows-4 sm:gap-y-3 md:grid-cols-2 md:grid-rows-2 md:gap-x-3 md:gap-y-3 lg:grid-cols-4 lg:grid-rows-1 lg:gap-x-3 mx-auto">
@@ -121,7 +121,7 @@ const About = () => {
           </div>
           <div className="my-7 mx-auto w-[100%] flex flex-col justify-center items-center space-y-5">
             <div className="text-center font-bold text-xl font-">and</div>
-            <div className="text-center font-medium text-xl w-[80%] mx-auto md:w-auto">We have a Passionate technical team of <span className="font-bold text-2xl ">11 members</span> who are working on this project.</div>
+            <div className="text-center font-medium text-xl w-[80%] mx-auto md:w-auto">We have a Passionate technical team of <span className="font-bold text-2xl ">15+ members</span> who are working on this project.</div>
           </div>
 
             <div className="animated-arrows relative pt-10 mt-10 mb-4 text-center">

@@ -4,32 +4,32 @@ const advantages = [
   {
     id: 1,
     head: "Services that are Fully Autonomous",
-    animation : "zoom-out-right"    
+    animation: "zoom-out",
   },
   {
     id: 2,
     head: "Purely Solar-Powered, CO2-Neutral Technology",
-    animation : "zoom-in"    
+    animation: "zoom-in",
   },
   {
     id: 3,
     head: "Increased Production",
-    animation : "zoom-out-left"
+    animation: "zoom-out",
   },
   {
     id: 4,
     head: "Boosts Agriculturalists Income by 40%",
-    animation : "zoom-out-right"
+    animation: "zoom-out",
   },
   {
     id: 5,
     head: "Agriculture Without Hustle",
-    animation : "zoom-in"
+    animation: "zoom-in",
   },
   {
     id: 6,
     head: "Time Efficient",
-    animation : "zoom-out-left"    
+    animation: "zoom-out",
   },
 ];
 
@@ -37,16 +37,24 @@ const Advantages = () => {
   return (
     <main id="advantages" className="w-[100%] min-h-screen ">
       <section className="w-[100%] pt-16 pl-4">
-        <div className="text-3xl font-nunitosans mt-4 mb-1 text-[#004346] ml-4 pt-2" data-aos="fade-right" data-aos-duration="400">
+        <div
+          className="text-3xl font-nunitosans mt-4 mb-1 text-[#004346] ml-4 pt-2"
+          data-aos="zoom-in"
+          data-aos-duration="400"
+        >
           Advantages
         </div>
         <div
           id="sub-head"
-          className="w-28 h-[0.15rem] rounded bg-[#f29f05] mb-2 ml-4" data-aos="fade-right" data-aos-duration="700"
+          className="w-28 h-[0.15rem] rounded bg-[#f29f05] mb-2 ml-4"
+          data-aos="zoom-in"
+          data-aos-duration="700"
         ></div>
         <div
           id="sub-head"
-          className="w-80 h-[0.15rem] break-words rounded font-[Poppins] font-[600] mb-2 ml-4 " data-aos="fade-right" data-aos-duration="900"
+          className="w-80 h-[0.15rem] break-words rounded font-[Poppins] font-[600] mb-2 ml-4 "
+          data-aos="zoom-in"
+          data-aos-duration="900"
         >
           The Smart Way to get your Benefits
         </div>
@@ -57,16 +65,18 @@ const Advantages = () => {
               return (
                 <div
                   key={each.id}
-                  className="box w-[90%] mx-auto select-none md:w-[100%] h-[120px] bg-green-400 relative shadow-md
-                rounded-md mb-10 md:mb-12" data-aos={each.animation} data-aos-duration="600" data-aos-offset="-100"
+                  className="box w-[90%] mx-auto select-none md:w-[100%] h-[160px] md:h-[150px] bg-green-500 relative shadow-md
+                rounded-md mb-10 md:mb-12"
+                  data-aos={each.animation}
+                  data-aos-duration="600"
+                  data-aos-offset="100"
                 >
                   <div className="content z-[10] text-black p-3  flex flex-col items-start justify-around w-[100%] space-y-4">
                     <span className="break-words head font-leaguespartan font-semibold text-2xl z-[3]">
                       {each.head}
                     </span>
-                    
                   </div>
-                  <span className="absolute font-leaguespartan text-white text-8xl text-opacity-30 z-[0] top-10 right-0 mt-0 mr-8 text-center">
+                  <span className="absolute font-leaguespartan text-white text-7xl text-opacity-30 z-[0] bottom-0 right-0 mt-0 mr-8 text-center">
                     {each.id}
                   </span>
                 </div>
@@ -74,12 +84,11 @@ const Advantages = () => {
             })}
           </div>
         </div>
-
-        <div className="animated-arrows relative">
-          <div className="scroll-down down-1"></div>
-          <div className="scroll-down down-2"></div>
-        </div>
       </section>
+      <div className="animated-arrows relative">
+        <div className="scroll-down down-1"></div>
+        <div className="scroll-down down-2"></div>
+      </div>
     </main>
   );
 };

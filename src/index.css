@@ -4,6 +4,7 @@
 
 html,body{
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 
@@ -44,7 +45,7 @@ body{
 .animated-arrows{
     position: relative;
     width: 100%;
-    height: 70px;
+    height: 60px;
 }
 
 .scroll-down {
@@ -60,7 +61,7 @@ body{
   border-left: 5px solid #008037;
   border-top: 5px solid #008037;
   z-index: 9;
-  left: 49%;
+  margin-left: 49%;
 }
 
 
@@ -105,9 +106,25 @@ body{
   @media only screen and (max-width: 1024px) {
     .animated-arrows{
       position: relative;
-      width: 90%;
+      width: 100%;
       height: 24px;
       margin: 4rem auto 1rem auto;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 15px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 30px;
+    height: 30px;
+    border-left: 5px solid #008037;
+    border-top: 5px solid #008037;
+    z-index: 9;
+    margin-left: 48.5%;
   }
 }
 

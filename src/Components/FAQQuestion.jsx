@@ -11,7 +11,7 @@ const FAQQuestion = ({ title, info }) => {
           setShowInfo(!showInfo);
         }}
       >
-        <div className="question-section flex items-center justify-between duration-500 my-2" data-aos="flip-left" data-aos-offset="0" data-aos-duration="600" data-aos-delay="200">
+        <div className="question-section flex items-center justify-between duration-500 my-2 gap-x-7" data-aos="zoom-out" data-aos-offset="100" data-aos-duration="600" data-aos-delay="200">
           <span
             className="text-lg font-semibold italic font-[Poppins] cursor-pointer select-none"
             onClick={() => {

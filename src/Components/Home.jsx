@@ -21,7 +21,7 @@ const Home = ({navbar}) => {
           <source src={Sample} type="video/mp4"/>
         </video> */}
 
-        <div className={navbar === true ? "bg-white z-10 w-full fixed top-0 left-0 font-[Poppins] md:h-auto" : "bg-white bg-opacity-0 z-10 w-full fixed top-0 left-0 font-[Poppins] md:h-auto"}>
+        <div className={navbar === true ? "bg-white z-10 w-[100%] fixed top-0 left-0 font-[Poppins] md:h-auto right-0" : "bg-white bg-opacity-0 z-10 w-[100%] fixed top-0 left-0 right-0 font-[Poppins] md:h-auto"}>
           <div className="md:flex items-center justify-between py-4 md:px-10 px-7 z-10">
             <a
               href="/"
@@ -39,8 +39,8 @@ const Home = ({navbar}) => {
             </div>
 
             <ul
-              className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 md:h-auto h-[100vh] md:transition-none duration-300 ease-in ${navbar === true ? "bg-white" : "bg-white md:bg-white md:bg-opacity-0 duration-500 transition-all"} ${
-                open ? "top-16 " : "top-[-579px]"
+              className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 md:h-auto h-[100vh] md:transition-none duration-300 ease-in ${navbar === true ? "bg-white" : "bg-white md:bg-white md:bg-opacity-0 duration-500 transition-all"} ${
+                open ? "top-16 " : "top-[-590px]"
               } text-center`}
             >
               {Links.map((link) => (
