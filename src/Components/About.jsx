@@ -16,10 +16,10 @@ import Partner4 from "../Images/Partner-3.png";
 
 
 const teamMembers = [
-    {key:1, name:"Mahesh Vuppu" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", desc:"Extremely ambitious to accomplish great things through serial entrepreneurship." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
-    {key:2, name:"Adhnan Mahboob.M" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", desc:"His personal interests include business, marketing, and socialising. He is quite knowledgeable about stocks." , role:"Co-Founder" , animation:"zoom-out" , duration:600},
-    {key:3, name:"Naveen Gadala" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", desc:"He conducts effective market and consumer surveys and has outstanding interpersonal skills." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
-    {key:4, name:"Jeshwanth Reddy.K" , linkedin: "https://linkedin/in/..." , instagram:"https://instagram.com/...", desc:"Enthusiastic, a person who is really passionate, enjoys working with a team, and is punctual" , role:"Co-Founder" , animation:"zoom-out" , duration:600}
+    {key:1, name:"Mahesh Vuppu" , linkedin: "https://linkedin/in/maheshvuppu" , instagram:"https://instagram.com/iam_mahesh___", desc:"Extremely ambitious to accomplish great things through serial entrepreneurship." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
+    {key:2, name:"Adhnan Mohd" , linkedin: "https://linkedin/in/adnan-mohd-548771245" , instagram:"https://instagram.com/addyy.04", desc:"His personal interests include business, marketing, and socialising. He is quite knowledgeable about stocks." , role:"Co-Founder" , animation:"zoom-out" , duration:600},
+    {key:3, name:"Naveen Gadala" , linkedin: "https://linkedin/in/naveengadala-075757254" , instagram:"https://instagram.com/navii._.07/", desc:"He conducts effective market and consumer surveys and has outstanding interpersonal skills." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
+    {key:4, name:"Jeshwanth Reddy.K" , linkedin: "https://www.linkedin.com/in/k-jeswanth-reddy-b778b8245" , instagram:"https://instagram.com/jeshwanth_reddyyy", desc:"Enthusiastic, a person who is really passionate, enjoys working with a team, and is punctual" , role:"Co-Founder" , animation:"zoom-out" , duration:600}
 ]
 
 
@@ -27,13 +27,13 @@ const teamMembers = [
 
 const About = () => {
   return (
-    <main className="font-[Poppins] min-h-screen" id="about-us">
+    <main className="font-[Poppins] min-h-screen overflow-x-hidden" id="about-us">
         {/* About Us Section */}
         <section
           className="w-[100%] min-h-screen bg-[#FFFFFF] text-black px-4 pb-2 pt-14"
           
         >
-          <div className="text-3xl font-nunitosans mt-4 my-2 text-[#004346] ml-4 pt-2" data-aos="zoom-in" data-aos-duration="400">
+          <div className="text-3xl font-nunitosans mt-4 my-2 text-[#004346] ml-4 pt-2 text-left" data-aos="zoom-in" data-aos-duration="600">
             About
           </div>
           <div
@@ -42,13 +42,13 @@ const About = () => {
           ></div>
           <div
             id="sub-head"
-            className="w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 " data-aos="zoom-in" data-aos-duration="900"
+            className="w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left" data-aos="zoom-in" data-aos-duration="900"
           >
             What we're doing?
           </div>
           <div className="flex flex-row items-center justify-center flex-wrap lg:flex-nowrap mt-6 lg:mt-2 mb-2 mx-2">
             <div
-              className="matter w-[100%] lg:w-[50%] text-2xl ml-4 order-2 lg:order-1 text-center lg:text-left text-black font-semibold"
+              className="matter w-[100%] lg:w-[55%] text-2xl ml-4 order-2 lg:order-1 text-center lg:text-left text-black font-semibold"
               id="text-image" data-aos="zoom-out" data-aos-duration="800"
             >
               <span id='agrodroid' className="text-4xl font-leaguespartan font-bold text-center">
@@ -59,7 +59,7 @@ const About = () => {
               and harvest cotton .
             </div>
             <img
-              className="image-about lg:w-[55%] w-[100%] mr-2 order-1 lg:order-2"
+              className="image-about lg:w-[60%] w-[100%] mr-2 order-1 lg:order-2"
               src={about}
               alt="about-us" data-aos="zoom-out" data-aos-duration="800"
             />
@@ -89,7 +89,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="animated-arrows relative pt-10 mt-10 mb-4 text-center">
+            <div className="animated-arrows relative pt-20 mt-10 mb-4 text-center">
               <div className="scroll-down down-1"></div>
               <div className="scroll-down down-2"></div>
             </div>
@@ -98,7 +98,7 @@ const About = () => {
 
         {/* Our Team Starts */}
         <section id="team-section" className="w-[100%] min-h-screen px-4 pb-2 pt-8">
-          <div className="logo w-[30%] md:w-[15%] mx-auto py-3" data-aos="zoom-out" data-aos-duration="800">
+          <div className="logo w-[30%] md:w-[15%] mx-auto py-3" data-aos="zoom-out" data-aos-duration="800" data-aos-offset="200">
             <img src={Team} alt="Team"/>
           </div>
           <div className="team-member-cards ml-4 mt-8 grid sm:grid-cols-1 sm:grid-rows-4 sm:gap-y-3 md:grid-cols-2 md:grid-rows-2 md:gap-x-3 md:gap-y-3 lg:grid-cols-4 lg:grid-rows-1 lg:gap-x-3 mx-auto">
@@ -106,7 +106,7 @@ const About = () => {
               teamMembers.map((each)=>{
                 return (
                   <div key={each.key} className="each-card flex flex-col w-[280px] bg-white  hover:scale-[1.05] hover:duration-300 hover:ease-in-out py-3 m-auto" data-aos={each.animation} data-aos-offset="250" data-aos-duration={each.duration}>
-                    <img src={each.name === "Mahesh Vuppu" ? Partner1 : each.name === "Adhnan Mahboob.M" ? Partner2 : each.name === "Jeshwanth Reddy.K" ? Partner3 : each.name === "Naveen Gadala" ? Partner4 : ""} alt="member" className="object-cover my-1 w-[80%] h-[220px] rounded-[50%] m-auto "/>
+                    <img src={each.name === "Mahesh Vuppu" ? Partner1 : each.name === "Adhnan Mohd" ? Partner2 : each.name === "Jeshwanth Reddy.K" ? Partner3 : each.name === "Naveen Gadala" ? Partner4 : ""} alt="member" className="object-cover my-1 w-[80%] h-[220px] rounded-[50%] m-auto "/>
                     <span className="post m-auto my-2 text-center italic">{each.role}</span>
                     <span className="name m-auto my-2 text-center font-nunitosans text-xl">{each.name}</span>
                     <span className="desc m-auto my-2 text-center w-[90%] font-lignt">{each.desc}</span>
@@ -120,8 +120,8 @@ const About = () => {
             }
           </div>
           <div className="my-7 mx-auto w-[100%] flex flex-col justify-center items-center space-y-5">
-            <div className="text-center font-bold text-xl font-">and</div>
-            <div className="text-center font-medium text-xl w-[80%] mx-auto md:w-auto">We have a Passionate technical team of <span className="font-bold text-2xl ">15+ members</span> who are working on this project.</div>
+            <div className="text-center font-bold text-xl italic">and</div>
+            <div className="text-center font-medium text-xl w-[90%] mx-auto md:w-auto">We have a Passionate technical team of <span className="font-bold text-2xl text-orange-500">15+ members</span> who are working on this project.</div>
           </div>
 
             <div className="animated-arrows relative pt-10 mt-10 mb-4 text-center">

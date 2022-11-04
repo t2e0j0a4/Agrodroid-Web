@@ -35,12 +35,12 @@ const advantages = [
 
 const Advantages = () => {
   return (
-    <main id="advantages" className="w-[100%] min-h-screen ">
+    <main id="advantages" className="w-[100%] min-h-screen overflow-x-hidden md:overflow-y-hidden">
       <section className="w-[100%] pt-16 pl-4">
         <div
           className="text-3xl font-nunitosans mt-4 mb-1 text-[#004346] ml-4 pt-2"
           data-aos="zoom-in"
-          data-aos-duration="400"
+          data-aos-duration="600"
         >
           Advantages
         </div>
@@ -52,7 +52,7 @@ const Advantages = () => {
         ></div>
         <div
           id="sub-head"
-          className="w-80 h-[0.15rem] break-words rounded font-[Poppins] font-[600] mb-2 ml-4 "
+          className="w-80 h-auto break-words rounded font-[Poppins] font-[600] mb-2 ml-4 "
           data-aos="zoom-in"
           data-aos-duration="900"
         >
@@ -68,8 +68,8 @@ const Advantages = () => {
                   className="box w-[90%] mx-auto select-none md:w-[100%] h-[160px] md:h-[150px] bg-green-500 relative shadow-md
                 rounded-md mb-10 md:mb-12"
                   data-aos={each.animation}
-                  data-aos-duration="600"
-                  data-aos-offset="100"
+                  data-aos-duration="700"
+                  data-aos-offset="140"
                 >
                   <div className="content z-[10] text-black p-3  flex flex-col items-start justify-around w-[100%] space-y-4">
                     <span className="break-words head font-leaguespartan font-semibold text-2xl z-[3]">

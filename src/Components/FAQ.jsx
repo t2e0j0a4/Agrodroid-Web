@@ -11,8 +11,8 @@ const FAQ = () => {
 
   return (
     <>
-      <main className="w-[100%] h-[100%] py-2" id="FAQ">
-        <section className="w-[100%] pt-20 py-2 px-4">
+      <main className="w-[100%] h-[100%] py-2 overflow-x-hidden" id="FAQ">
+        <section className="w-[100%] pt-20 py-2 px-4 overflow-x-hidden">
           <div className="text-3xl font-nunitosans flex items-center flex-row gap-4 mt-4 my-2 text-[#004346] ml-4" data-aos="zoom-in" data-aos-duration="400">
             FAQ <span className='w-fit'><MdQuestionAnswer className='text-green-800 text-outline'/></span>
           </div>

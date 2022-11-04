@@ -1,75 +1,98 @@
-import React , {useState} from 'react'
+import React, { useState } from "react";
 
-const Home = ({navbar}) => {
+// import Sample from "../Images/SampleBG.mp4";
 
-    let Links = [
-        { name: "Home", link: "#home" },
-        { name: "About", link: "#about-us" },
-        { name: "Services", link: "#services" },
-        { name: "Advantages", link: "#advantages" },
-        { name: "FAQ", link: "#FAQ" },
-    ];
-      
-    const [open, setOpen] = useState(false);
+import Head from "../Images/Home-NavIcon.png";
+import About from "../Images/About-NavIcon.png";
+import Services from "../Images/Services-NavIcon.png";
+import Advantages from "../Images/Advantages-NavIcon.png";
+import FAQ from "../Images/Question-NavIcon.png";
+
+import BG from "../Images/SampleBG.mp4"
+
+let Links = [
+  { id: 1, name: "Home", link: "#home", icon: Head },
+  { id: 2, name: "About", link: "#about-us", icon: About },
+  { id: 3, name: "Services", link: "#services", icon: Services },
+  { id: 4, name: "Advantages", link: "#advantages", icon: Advantages },
+  { id: 5, name: "FAQ", link: "#FAQ", icon: FAQ },
+];
+
+const Home = ({ navbar }) => {
+  const [open, setOpen] = useState(false);
 
   return (
     <>
-        {/* <header className="z-10 relative w-[100%] h-[100vh] overflow-hidden text-center flex items-center justify-center" id="header"> */}
-        <header className="relative w-[100%] h-[100vh]" id="header">
+      {/* <header className="z-10 relative w-[100%] h-[100vh] overflow-hidden text-center flex items-center justify-center" id="header"> */}
 
-        {/* <video id="back-video" autoPlay loop  muted playsInline className="z-[-1] absolute top-20 left-0 w-[100%] h-[100vh] bg-cover">
-          <source src={Sample} type="video/mp4"/>
-        </video> */}
-
-        <div className={navbar === true ? "bg-white z-10 w-[100%] fixed top-0 left-0 font-[Poppins] md:h-auto right-0" : "bg-white bg-opacity-0 z-10 w-[100%] fixed top-0 left-0 right-0 font-[Poppins] md:h-auto"}>
-          <div className="md:flex items-center justify-between py-4 md:px-10 px-7 z-10">
-            <a
-              href="/"
-              className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-      text-gray-800"
-            >
-              <span className="text-3xl mr-1 pt-2 sm:text-center">Agrodroid</span>
-            </a>
-
-            <div
-              onClick={() => setOpen(!open)}
-              className=" text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
-            >
-              <ion-icon name={open ? "close" : "menu"}></ion-icon>
-            </div>
-
-            <ul
-              className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 md:h-auto h-[100vh] md:transition-none duration-300 ease-in ${navbar === true ? "bg-white" : "bg-white md:bg-white md:bg-opacity-0 duration-500 transition-all"} ${
-                open ? "top-16 " : "top-[-590px]"
-              } text-center`}
-            >
-              {Links.map((link) => (
-                <li key={link.name} id="navlink" className="md:ml-8 text-xl md:my-0 my-14 ">
-                  <a
-                    href={link.link}
-                    className={navbar === true ?"text-gray-800" : "text-gray-800 md:text-white"}
-                    target="_parent"
-                    onClick={() => {
-                      setOpen(!open);
-                      document.title=`Agrodroid | ${link.name}`;
-                    }}
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        
-        <div id="home" className="w-[100%] h-[100vh] flex justify-center items-center flex-col  m-auto">
-        
-        <h1 className="text-black outline- z-9 text-[16vmin] font-[Poppins] text-center">AGRODROID</h1>
+      <header className="relative w-[100%] h-[100vh]" id="header">
+      <div className="overlay absolute top-0 left-0 w-[100%] h-[100%] bg-black bg-opacity-60 z-[6]"></div>
+      <div className="absolute top-0 w-[100%] h-[100vh]">
+        <video src={BG} autoPlay loop muted className="h-[100%] w-[100%] object-cover"/>
       </div>
+          
+        <nav
+          id="navbar"
+          className={
+            navbar === true
+              ? "w-[100%] h-[74px] bg-white fixed top-0 left-0 right-0 flex flex-row items-center justify-between font-[Poppins] z-[12]"
+              : "w-[100%] h-[74px] bg-white bg-opacity-100 lg:bg-opacity-0 fixed top-0 left-0 right-0 flex flex-row items-center justify-between font-[Poppins] z-[10]"
+          }
+        >
+          <div id="logo" className="ml-6 lg:ml-10 text-3xl font-semibold">
+            Agrodroid
+          </div>
+          <ul
+            id="navitems"
+            className={`flex flex-col lg:flex-row items-start justify-start lg:items-center lg:justify-center lg:space-x-8 lg:mr-10 pt-10 lg:pt-0 absolute lg:static w-[100%] lg:w-auto bg-white h-[100vh] lg:h-auto space-y-10 lg:space-y-0 ${
+              open ? "top-[74px]" : "top-[-900px]"
+            } ${navbar === true ? "bg-white" : "bg-white lg:bg-opacity-0"}`}
+          >
+            {Links.map((link) => {
+              return (
+                <Linker key={link.id} {...link} open={open} setOpen={setOpen} navbar={navbar}/>
+              );
+            })}
+          </ul>
+          <div
+            id="menu"
+            className="block lg:hidden text-3xl cursor-pointer absolute top-0 right-0 mt-5 mr-5"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            <ion-icon name={open ? "close" : "menu"}></ion-icon>
+          </div>
+        </nav>
 
+        <section id="home" className="w-[100%] h-[100%] absolute top-0 left-0 flex flex-column items-center justify-center flex-wrap lg:flex-nowrap z-[8]">
+          <h1 className="text-[10vmin] font-[Poppins] text-white">Agrodroid</h1>
+        </section>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
+
+const Linker = ({ name, link, icon, open, setOpen , navbar }) => {
+  return (
+    <li
+      id="navigate"
+      className={`flex flex-row items-center justify-center text-xl space-x-1 py-2 pl-6 lg:pl-0`}
+    >
+      <img src={icon} alt="Nav" className="w-5 h-5 select-none" />
+      <a
+        id="navhlink" 
+        className={`${navbar ? "text-gray-900" : "text-gray-900 lg:text-gray-100"}`}
+        href={link}
+        onClick={() => {
+          setOpen(!open);
+          document.title = `Agrodroid | ${name}`;
+        }}
+      >
+        {name}
+      </a>
+    </li>
+  );
+};

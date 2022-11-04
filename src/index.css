@@ -22,25 +22,37 @@ body{
   overflow-x: hidden;
 }
 
-#header{
+
+/* #header{
   background-image: url('./Images/Smaple.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 @media (min-aspect-ratio: 16/9){
-  #back-video{
+  #videobg{
     width: 100%;
     height: auto;
   }
 }
 
 @media (max-aspect-ratio: 16/9){
-  #back-video{
+  #videobg{
     width: auto;
     height: 100%;
   }
 }
+/* 
+@media (max-width: 767px) {
+  #videobg {
+      display: none;
+  }
+  #header {
+      background: url('./Images/Sample.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+} */
 
 .animated-arrows{
     position: relative;
