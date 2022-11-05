@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Component Imports
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Services from "./Components/Services";
@@ -11,7 +12,7 @@ const App = () => {
   const [navbar, setNavbar] = useState(false);
 
   const navbarColor = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 80) {
       setNavbar(true);
     } else {
       setNavbar(false);

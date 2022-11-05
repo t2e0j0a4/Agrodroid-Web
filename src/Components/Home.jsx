@@ -8,7 +8,7 @@ import Services from "../Images/Services-NavIcon.png";
 import Advantages from "../Images/Advantages-NavIcon.png";
 import FAQ from "../Images/Question-NavIcon.png";
 
-import BG from "../Images/SampleBG.mp4"
+import BG from "../Images/Rover.mp4";
 
 let Links = [
   { id: 1, name: "Home", link: "#home", icon: Head },
@@ -23,10 +23,8 @@ const Home = ({ navbar }) => {
 
   return (
     <>
-      {/* <header className="z-10 relative w-[100%] h-[100vh] overflow-hidden text-center flex items-center justify-center" id="header"> */}
-
       <header className="relative w-[100%] h-[100vh]" id="header">
-      <div className="overlay absolute top-0 left-0 w-[100%] h-[100%] bg-black bg-opacity-60 z-[6]"></div>
+      <div className="overlay absolute top-0 left-0 w-[100%] h-[100%] bg-black bg-opacity-10 z-[6]"></div>
       <div className="absolute top-0 w-[100%] h-[100vh]">
         <video src={BG} autoPlay loop muted className="h-[100%] w-[100%] object-cover"/>
       </div>
@@ -39,7 +37,7 @@ const Home = ({ navbar }) => {
               : "w-[100%] h-[74px] bg-white bg-opacity-100 lg:bg-opacity-0 fixed top-0 left-0 right-0 flex flex-row items-center justify-between font-[Poppins] z-[10]"
           }
         >
-          <div id="logo" className="ml-6 lg:ml-10 text-3xl font-semibold">
+          <div id="logo" className={`ml-6 lg:ml-10 text-3xl font-semibold ${navbar ? "text-gray-900" : "text-gray-900 lg:text-white"}`}>
             Agrodroid
           </div>
           <ul
