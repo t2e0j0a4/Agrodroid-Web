@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-// import Sample from "../Images/SampleBG.mp4";
+import Logo1 from "../Images/Agrodroid Logo Edited.png";
+import Logo2 from "../Images/Agrodroid Logo White Edited.png";
 
 import Head from "../Images/Home-NavIcon.png";
 import About from "../Images/About-NavIcon.png";
@@ -40,7 +41,7 @@ const Home = ({ navbar }) => {
           }
         >
           <div id="logo" className={`ml-6 lg:ml-10 text-3xl font-semibold ${navbar ? "text-gray-900" : "text-gray-900 lg:text-white"}`}>
-            <a href="/">Agrodroid</a>
+            <a href="/"><img src={Logo1} alt="Logo1" className={`w-[150px] ${navbar ? 'block' : 'hidden'}`}/></a>
           </div>
           <ul
             id="navitems"
@@ -65,8 +66,9 @@ const Home = ({ navbar }) => {
           </div>
         </nav>
 
-        <section id="home" className="w-[100%] h-[100%] absolute top-0 left-0 flex flex-column items-end justify-center flex-wrap lg:flex-nowrap z-[8]">
-          <h1 className="text-[6vmin] md:text-[8vmin] font-[Open Sans] font-semibold mb-20 text-center text-gray-300">Makes Farming Easy</h1>
+        <section id="home" className="w-[100%] h-[100%] absolute top-0 left-0 flex flex-col items-center justify-center flex-wrap lg:flex-nowrap z-[8] pt-16">
+          <img src={Logo2} alt="Agrodroid" className="md:w-[60%] object-cover w-[90%] my-4"/>
+          <h1 className="text-[6vmin] md:text-[8vmin] font-[Open Sans] font-semibold mb-20 text-center text-gray-300">- Makes Farming Easy -</h1>
         </section>
       </header>
     </>

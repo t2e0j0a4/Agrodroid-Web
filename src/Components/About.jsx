@@ -28,6 +28,7 @@ const teamMembers = [
 const About = () => {
   return (
     <main className="font-[Poppins] min-h-screen overflow-x-hidden" id="about-us">
+      
         {/* About Us Section */}
         <section
           className="w-[100%] min-h-screen text-black px-4 pb-2 pt-14"
@@ -48,7 +49,7 @@ const About = () => {
           </div>
           <div className="flex flex-row items-center justify-center flex-wrap lg:flex-nowrap mt-6 lg:mt-2 mb-2 mx-2">
             <div
-              className="matter w-[100%] lg:w-[55%] text-2xl ml-4 order-2 lg:order-1 text-center lg:text-left text-black font-semibold"
+              className="matter w-[100%] lg:w-[45%] text-xl ml-4 order-2 lg:order-1 text-center lg:text-left text-black font-semibold"
               id="text-image" data-aos="zoom-out" data-aos-duration="800"
             >
               <span id='agrodroid' className="text-4xl font-leaguespartan font-bold text-center">
@@ -59,7 +60,7 @@ const About = () => {
               and harvest cotton .
             </div>
             <img
-              className="image-about lg:w-[60%] w-[100%] mr-2 order-1 lg:order-2"
+              className="image-about lg:w-[55%] w-[100%] mr-2 order-1 lg:order-2"
               src={about}
               alt="about-us" data-aos="zoom-out" data-aos-duration="800"
             />

@@ -12,6 +12,10 @@ body::-webkit-scrollbar{
     width: 0;
 }
 
+#home{
+  font-family: 'Open Sans',serif;
+}
+
 body{
   overflow-x: hidden;
 }

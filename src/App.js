@@ -7,12 +7,13 @@ import Services from "./Components/Services";
 import FAQ from "./Components/FAQ";
 import Footer from "./Components/Footer";
 import Advantages from "./Components/Advantages";
+import Achivements from "./Components/Achivements";
 
 const App = () => {
   const [navbar, setNavbar] = useState(false);
 
   const navbarColor = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 150) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -30,6 +31,7 @@ const App = () => {
         <About />
         <Services />
         <Advantages />
+        <Achivements />
         <FAQ />
       </div>
       <Footer />
