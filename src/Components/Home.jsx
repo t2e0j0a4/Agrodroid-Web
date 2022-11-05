@@ -24,7 +24,9 @@ const Home = ({ navbar }) => {
   return (
     <>
       <header className="relative w-[100%] h-[100vh]" id="header">
-      <div className="overlay absolute top-0 left-0 w-[100%] h-[100%] bg-black bg-opacity-10 z-[6]"></div>
+
+      <div className="overlay absolute top-0 left-0 w-[100%] h-[100%] bg-black bg-opacity-30 z-[6]"></div>
+      
       <div className="absolute top-0 w-[100%] h-[100vh]">
         <video src={BG} autoPlay loop muted className="h-[100%] w-[100%] object-cover"/>
       </div>
@@ -38,7 +40,7 @@ const Home = ({ navbar }) => {
           }
         >
           <div id="logo" className={`ml-6 lg:ml-10 text-3xl font-semibold ${navbar ? "text-gray-900" : "text-gray-900 lg:text-white"}`}>
-            Agrodroid
+            <a href="/">Agrodroid</a>
           </div>
           <ul
             id="navitems"
@@ -63,8 +65,8 @@ const Home = ({ navbar }) => {
           </div>
         </nav>
 
-        <section id="home" className="w-[100%] h-[100%] absolute top-0 left-0 flex flex-column items-center justify-center flex-wrap lg:flex-nowrap z-[8]">
-          <h1 className="text-[10vmin] font-[Poppins] text-white">Agrodroid</h1>
+        <section id="home" className="w-[100%] h-[100%] absolute top-0 left-0 flex flex-column items-end justify-center flex-wrap lg:flex-nowrap z-[8]">
+          <h1 className="text-[6vmin] md:text-[8vmin] font-[Open Sans] font-semibold mb-20 text-center text-gray-300">Makes Farming Easy</h1>
         </section>
       </header>
     </>
@@ -74,6 +76,7 @@ const Home = ({ navbar }) => {
 export default Home;
 
 const Linker = ({ name, link, icon, open, setOpen , navbar }) => {
+  // const [focus , setFocus] = useState(false);
   return (
     <li
       id="navigate"
@@ -84,7 +87,7 @@ const Linker = ({ name, link, icon, open, setOpen , navbar }) => {
         id="navhlink" 
         className={`${navbar ? "text-gray-900" : "text-gray-900 lg:text-gray-100"}`}
         href={link}
-        onClick={() => {
+        onClick={(e) => {
           setOpen(!open);
           document.title = `Agrodroid | ${name}`;
         }}

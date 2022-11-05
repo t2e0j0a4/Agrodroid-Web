@@ -9,7 +9,7 @@ import Team from "../Images/Team.png";
 
 
 
-import Partner1 from "../Images/Partner-1-Edited.png";
+import Partner1 from "../Images/Partner-1.png";
 import Partner2 from "../Images/Partner-2.png";
 import Partner3 from "../Images/Partner-4.png";
 import Partner4 from "../Images/Partner-3.png";
@@ -30,7 +30,7 @@ const About = () => {
     <main className="font-[Poppins] min-h-screen overflow-x-hidden" id="about-us">
         {/* About Us Section */}
         <section
-          className="w-[100%] min-h-screen bg-[#FFFFFF] text-black px-4 pb-2 pt-14"
+          className="w-[100%] min-h-screen text-black px-4 pb-2 pt-14"
           
         >
           <div className="text-3xl font-nunitosans mt-4 my-2 text-[#004346] ml-4 pt-2 text-left" data-aos="zoom-in" data-aos-duration="600">
@@ -72,7 +72,7 @@ const About = () => {
         {/* About Us Section Ends */}
 
         {/* Vision and Mission Starts */}
-        <section id="vision-and-mission" className="w-[100%] min-h-screen bg-white px-4 pb-2 pt-16">
+        <section id="vision-and-mission" className="w-[100%] min-h-screen px-4 pb-2 pt-16">
             <div className="main-head-v-m text-2xl font-nunitosans font-semibold text-[#004346] text-center" data-aos="zoom-in" data-aos-duration="400">Vision and Mission</div>
             <div data-aos="zoom-in" data-aos-duration="700" className="w-28 h-[0.15rem] bg-[#f29f05] rounded text-center m-auto mb-4 mt-2"></div>
             <div className="outer-box  flex flex-row my-3 justify-center items-center flex-wrap md:flex-nowrap space-y-20 md:space-y-0">
@@ -105,7 +105,7 @@ const About = () => {
             {
               teamMembers.map((each)=>{
                 return (
-                  <div key={each.key} className="each-card flex flex-col w-[280px] bg-white  hover:scale-[1.05] hover:duration-300 hover:ease-in-out py-3 m-auto" data-aos={each.animation} data-aos-offset="250" data-aos-duration={each.duration}>
+                  <div key={each.key} className="each-card flex flex-col w-[280px]  hover:scale-[1.05] hover:duration-300 hover:ease-in-out py-3 m-auto" data-aos={each.animation} data-aos-offset="250" data-aos-duration={each.duration}>
                     <img src={each.name === "Mahesh Vuppu" ? Partner1 : each.name === "Adhnan Mohd" ? Partner2 : each.name === "Jeshwanth Reddy.K" ? Partner3 : each.name === "Naveen Gadala" ? Partner4 : ""} alt="member" className="object-cover my-1 w-[80%] h-[220px] rounded-[50%] m-auto "/>
                     <span className="post m-auto my-2 text-center italic">{each.role}</span>
                     <span className="name m-auto my-2 text-center font-nunitosans text-xl">{each.name}</span>

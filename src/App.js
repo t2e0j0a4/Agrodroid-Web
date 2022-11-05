@@ -26,10 +26,12 @@ const App = () => {
   return (
     <>
       <Home navbar={navbar} />
-      <About />
-      <Services />
-      <Advantages />
-      <FAQ />
+      <div className="bg-gray-50">
+        <About />
+        <Services />
+        <Advantages />
+        <FAQ />
+      </div>
       <Footer />
     </>
   );
