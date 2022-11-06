@@ -2,7 +2,7 @@ import React  from 'react'
 
 import { BsLinkedin , BsInstagram } from "react-icons/bs";
 
-import about from "../Images/Image1.png";
+import about from "../Images/AgroDr.png";
 import Binoculars from "../Images/Binoculars.png";
 import Target from "../Images/Target.png";
 import Team from "../Images/Team.png";
@@ -53,11 +53,9 @@ const About = () => {
               id="text-image" data-aos="zoom-out" data-aos-duration="800"
             >
               <span id='agrodroid' className="text-4xl font-leaguespartan font-bold text-center">
-                Agrodroid
+                AgroDroid
               </span>{" "}
-              is an autonomous rover robot that can sow seeds, weed fields,
-              fertilize crops with precision spraying and solid fertilization,
-              and harvest cotton .
+              is an autonomous rover robot capable of sowing seeds, weeding fields, fertilising crops using precision spraying and solid fertilisation, and harvesting cotton.
             </div>
             <img
               className="image-about lg:w-[55%] w-[100%] mr-2 order-1 lg:order-2"

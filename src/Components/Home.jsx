@@ -1,22 +1,16 @@
 import React, { useState } from "react";
 
-import Logo1 from "../Images/Agrodroid Logo Edited.png";
-import Logo2 from "../Images/Agrodroid Logo White Edited.png";
-
-import Head from "../Images/Home-NavIcon.png";
-import About from "../Images/About-NavIcon.png";
-import Services from "../Images/Services-NavIcon.png";
-import Advantages from "../Images/Advantages-NavIcon.png";
-import FAQ from "../Images/Question-NavIcon.png";
+import Logo1 from "../Images/Agrodroid-W.png";
+import Logo2 from "../Images/AgroDroid-B.png";
 
 import BG from "../Images/Rover.mp4";
 
 let Links = [
-  { id: 1, name: "Home", link: "#home", icon: Head },
-  { id: 2, name: "About", link: "#about-us", icon: About },
-  { id: 3, name: "Services", link: "#services", icon: Services },
-  { id: 4, name: "Advantages", link: "#advantages", icon: Advantages },
-  { id: 5, name: "FAQ", link: "#FAQ", icon: FAQ },
+  { id: 1, name: "Home", link: "#home"},
+  { id: 2, name: "About", link: "#about-us"},
+  { id: 3, name: "Services", link: "#services"},
+  { id: 4, name: "Advantages", link: "#advantages"},
+  { id: 5, name: "FAQ", link: "#FAQ"},
 ];
 
 const Home = ({ navbar }) => {
@@ -26,7 +20,7 @@ const Home = ({ navbar }) => {
     <>
       <header className="relative w-[100%] h-[100vh]" id="header">
 
-      <div className="overlay absolute top-0 left-0 w-[100%] h-[100%] bg-black bg-opacity-30 z-[6]"></div>
+      <div className="overlay absolute top-0 left-0 w-[100%] h-[100%] bg-black bg-opacity-0 z-[6]"></div>
       
       <div className="absolute top-0 w-[100%] h-[100vh]">
         <video src={BG} autoPlay loop muted className="h-[100%] w-[100%] object-cover"/>
@@ -41,7 +35,7 @@ const Home = ({ navbar }) => {
           }
         >
           <div id="logo" className={`ml-6 lg:ml-10 text-3xl font-semibold ${navbar ? "text-gray-900" : "text-gray-900 lg:text-white"}`}>
-            <a href="/"><img src={Logo1} alt="Logo1" className={`w-[150px] ${navbar ? 'block' : 'hidden'}`}/></a>
+            <a href="/">{navbar ? <img src={Logo1} alt="Logo1" className={`w-[150px]`}/> : <><img src={Logo2} alt="Logo1" className={`w-[150px] lg:block hidden`}/> <img src={Logo1} alt="Logo1" className={`w-[150px] block lg:hidden`}/></>}</a>
           </div>
           <ul
             id="navitems"
@@ -66,9 +60,8 @@ const Home = ({ navbar }) => {
           </div>
         </nav>
 
-        <section id="home" className="w-[100%] h-[100%] absolute top-0 left-0 flex flex-col items-center justify-center flex-wrap lg:flex-nowrap z-[8] pt-16">
-          <img src={Logo2} alt="Agrodroid" className="md:w-[60%] object-cover w-[90%] my-4"/>
-          <h1 className="text-[6vmin] md:text-[8vmin] font-[Open Sans] font-semibold mb-20 text-center text-gray-300">- Makes Farming Easy -</h1>
+        <section id="home" className="w-[100%] h-[100%] absolute top-0 left-0 flex flex-col items-center md:justify-end justify-center flex-wrap lg:flex-nowrap z-[8] pt-16">
+          <h2 className="italic text-[7vmin] md:text-[10vmin] font-medium mb-8 text-center text-gray-300 pt-60 md:pt-0">Makes Farming Easy</h2>
         </section>
       </header>
     </>
@@ -84,7 +77,7 @@ const Linker = ({ name, link, icon, open, setOpen , navbar }) => {
       id="navigate"
       className={`flex flex-row items-center justify-center text-xl space-x-1 py-2 pl-6 lg:pl-0`}
     >
-      <img src={icon} alt="Nav" className="w-5 h-5 select-none" />
+      {/* <img src={icon} alt="Nav" className="w-5 h-5 select-none" /> */}
       <a
         id="navhlink" 
         className={`${navbar ? "text-gray-900" : "text-gray-900 lg:text-gray-100"}`}

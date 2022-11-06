@@ -8,18 +8,15 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea,} from "@mui/material";
 
-import Cover from "../Images/Gold.png";
+import C1 from "../Images/Certificate1.jpg";
 
 var items = [
   {
-    name: "Achievement #1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut odit ex at vero ducimus tenetur corporis doloremque reprehenderit similique?",
-    date: '01/01/2022'
-  },
-  {
-    name: "Achievement #2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut odit ex at vero ducimus tenetur corporis doloremque reprehenderit similique?",
-    date : '02/02/2022'
+    id:1,
+    name: "Build Your Brand",
+    description: "We Aquired 1st First Prize in Build Your Brand Competition Conducted by AIC T-Hub in Collabration with Institute of Aeronautical Engineering (IARE).",
+    date: '28/10/2022',
+    img:C1
   },
 ];
 
@@ -28,9 +25,9 @@ const Achivements = () => {
     <>
       <main
         id="achievements"
-        className="w-[100%] h-[100%] overflow-x-hidden overflow-y-hidden pt-8 px-4 bg-gray-50"
+        className="w-[100%] h-[100vh] overflow-x-hidden overflow-y-hidden pt-8 px-4 bg-gray-50"
       >
-        <section className="">
+        <section className="w-[100%] overflow-x-hidden overflow-y-hidden">
           <div
             className="text-3xl font-nunitosans mt-4 my-2 text-[#004346] ml-4 pt-2 text-left"
             data-aos="zoom-in"
@@ -53,16 +50,16 @@ const Achivements = () => {
             Our Potential Glance
           </div>
 
-          <div className="card-wrapper w-[100%] h-[100%] mt-8 mb-2 md:mb-4">
+          <div className="card-wrapper w-[100%] h-[100%] mt-16 mb-8 md:mb-16"  data-aos="zoom-out"
+            data-aos-duration="800"
+            data-aos-offset="200">
             <Carousel 
               animation="fade" 
               interval="10000" 
-              duration="1000"
+              duration="500"
               autoPlay={true} 
               indicators={false}
-              sx={{display:'flex' , alignItems:'center' , marginX:'auto' , width:'100%' , marginTop:'3rem' , height:{
-                xs:'100%' , md:'300px'
-              }}}
+              sx={{display:'flex' , alignItems:'center' , marginX:'auto' , width:'100%' , marginTop:'3rem', height:'50vh'}}
             >
               {items.map((item, i) => (
                 <Item key={i} item={item} />
@@ -86,29 +83,28 @@ export default Achivements;
 
 function Item(props) {
   return (
-    <Card
-      sx={{width:{xs:'90%' , md:'80%'} , marginX: 'auto' , display : 'flex' , alignItems:'center' , boxShadow:'0px 1px 8px 2px #000000a0'}}
+    <Card className="shadow-xl"
+      sx={{width:{xs:'95%' , md:'70%'} , marginX: 'auto' , display : 'flex' , alignItems:'center', height:'100%' }}
     >
-      <CardActionArea sx={{ display: "flex", flexDirection: {
-        xs:'col' , md:'row'
-      }, justifyContent:'space-around' }}>
+      <CardActionArea sx={{ display: "flex", flexDirection:{
+        xs:'column' , md:'row'
+      } , alignItems:'center' ,justifyContent :'space-between' , height:'100%'}}>
         <CardMedia 
-        className="hidden md:block"
           component="img"
-          sx = {{width : '20%', display:{
-            xs:'hidden' , md:'block' 
+          sx = {{width : '35%',height:'100%',display:{
+            xs:'none' , md:'block'
           }}}
-          image={Cover}
+          image={props.item.img}
           alt="Image"
         />
-        <CardContent sx={{width : '100%'}}>
-          <Typography gutterBottom variant="h5" component="div">
+        <CardContent sx={{width : {xs:'90%',md:'60%'}}}>
+          <Typography gutterBottom variant="h5" component="div" sx={{marginY:'10px' , fontFamily:'Poppins'}}>
             {props.item.name}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" sx={{marginY:'10px', fontFamily : 'Poppins'}}>
             {props.item.description}
           </Typography>
-          <Typography variant="h6" component="div">
+          <Typography variant="body1" component="div" sx={{marginY:'10px', fontFamily : 'Poppins'}}>
             {props.item.date}
           </Typography>
         </CardContent>

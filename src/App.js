@@ -4,16 +4,17 @@ import React, { useState } from "react";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Services from "./Components/Services";
-import FAQ from "./Components/FAQ";
-import Footer from "./Components/Footer";
 import Advantages from "./Components/Advantages";
 import Achivements from "./Components/Achivements";
+import Events from "./Components/Events";
+import FAQ from "./Components/FAQ";
+import Footer from "./Components/Footer";
 
 const App = () => {
   const [navbar, setNavbar] = useState(false);
 
   const navbarColor = () => {
-    if (window.scrollY >= 150) {
+    if (window.scrollY >= 200) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -32,6 +33,7 @@ const App = () => {
         <Services />
         <Advantages />
         <Achivements />
+        <Events />
         <FAQ />
       </div>
       <Footer />
