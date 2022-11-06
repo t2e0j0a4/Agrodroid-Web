@@ -27,11 +27,11 @@ const teamMembers = [
 
 const About = () => {
   return (
-    <main className="font-[Poppins] min-h-screen overflow-x-hidden" id="about-us">
+    <main className="font-[Poppins] h-[100%] overflow-x-hidden" id="about-us">
       
         {/* About Us Section */}
         <section
-          className="w-[100%] min-h-screen text-black px-4 pb-2 pt-14"
+          className="w-[100%] h-[100%] text-black px-4 pb-2 pt-16"
           
         >
           <div className="text-3xl font-nunitosans mt-4 my-2 text-[#004346] ml-4 pt-2 text-left" data-aos="zoom-in" data-aos-duration="600">
@@ -43,9 +43,9 @@ const About = () => {
           ></div>
           <div
             id="sub-head"
-            className="w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left" data-aos="zoom-in" data-aos-duration="900"
+            className="w-32 md:w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left break-words" data-aos="zoom-in" data-aos-duration="900"
           >
-            What
+            What we're doing?
           </div>
           <div className="flex flex-row items-center justify-center flex-wrap lg:flex-nowrap mt-6 lg:mt-2 mb-2 mx-2">
             <div

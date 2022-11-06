@@ -61,7 +61,7 @@ const Home = ({ navbar }) => {
         </nav>
 
         <section id="home" className="w-[100%] h-[100%] absolute top-0 left-0 flex flex-col items-center md:justify-end justify-center flex-wrap lg:flex-nowrap z-[8] pt-16">
-          <h2 className="w-[30%] md:w-[100%] italic text-[8vmin] md:text-[10vmin] font-medium mb-8 text-center mx-auto text-gray-100 pt-60 md:pt-0">Makes Farming Easy</h2>
+          <h2 className="w-[50%] md:w-[100%] italic text-[12vmin] md:text-[10vmin] font-medium mb-8 text-center mx-auto text-gray-100 pt-80 md:pt-0">Makes Farming Easy</h2>
         </section>
       </header>
     </>

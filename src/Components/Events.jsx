@@ -81,7 +81,7 @@ const Events = () => {
 
           <div
             id="event-scroll"
-            className="eventdisplay overflow-y-scroll w-[90%] md:w-[70%] mt-14 md:mt-12 h-[400px] bg-white p-3 mb-16 md:mb-16 mx-auto shadow-xl relative z-[10] rounded-lg"
+            className="eventdisplay overflow-y-scroll w-[90%] md:w-[70%] mt-14 md:mt-12 h-[400px] bg-white p-3 mb-16 md:mb-14 mx-auto shadow-xl relative z-[10] rounded-lg"
             data-aos="zoom-out"
             data-aos-duration="900"
             data-aos-offset="300"
@@ -91,7 +91,7 @@ const Events = () => {
                 <div
                   id="single-event"
                   key={eve.id}
-                  className="w-[90%] mx-auto flex gap-y-6 md:gap-y-0 md:gap-x-6 flex-col md:flex-row items-center bg-gray-50 justify-between my-6 mb-8 p-4 z-[20] rounded-[20px] shadow-md"
+                  className="w-[90%] mx-auto flex gap-y-4 md:gap-y-0 md:gap-x-6 flex-col md:flex-row items-center bg-gray-50 justify-between my-6 mb-8 p-4 z-[20] rounded-[20px] shadow-md"
                 >
                   <div
                     className={`md:w-[75%] w-[100%] gap-y-10 z-[20] text-center order-2 md:order-${eve.o1}`}
@@ -108,8 +108,8 @@ const Events = () => {
                 </div>
               );
             })}
-            <div className="vertical h-[175vh] md:h-[100vh] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] left-[20%] md:left-[10%]"></div>
-            <div className="vertical h-[175vh] md:h-[100vh] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] right-[20%] md:right-[10%]"></div>
+            <div className="vertical h-[1000px] md:h-[610px] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] left-[20%] md:left-[10%]"></div>
+            <div className="vertical h-[1000px] md:h-[610px] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] right-[20%] md:right-[10%]"></div>
           </div>
 
           <div className="animated-arrows relative pt-10 md:pt-0">

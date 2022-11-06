@@ -25,7 +25,7 @@ const Achivements = () => {
     <>
       <main
         id="achievements"
-        className="w-[100%] h-[100vh] overflow-x-hidden overflow-y-hidden pt-8 px-4 bg-gray-50"
+        className="w-[100%] h-[100%] overflow-x-hidden overflow-y-hidden pt-8 px-4 bg-gray-50"
       >
         <section className="w-[100%] overflow-x-hidden overflow-y-hidden">
           <div
@@ -50,7 +50,7 @@ const Achivements = () => {
             Our Potential Glance
           </div>
 
-          <div className="card-wrapper w-[100%] h-[100%] mt-16 mb-8 md:mb-16"  data-aos="zoom-out"
+          <div className="card-wrapper w-[100%] h-[100%] mt-4 lg:mt-8 lg:mb-8 mb-4 md:mb-16"  data-aos="zoom-out"
             data-aos-duration="800"
             data-aos-offset="200">
             <Carousel 
@@ -59,7 +59,9 @@ const Achivements = () => {
               duration="500"
               autoPlay={true} 
               indicators={false}
-              sx={{display:'flex' , alignItems:'center' , marginX:'auto' , width:'100%' , marginTop:'3rem', height:'50vh'}}
+              sx={{display:'flex' , alignItems:'center' , marginX:'auto' , width:'100%' , marginTop:{
+                xs:'1rem' , lg:'3rem'
+              }, height:'50vh'}}
             >
               {items.map((item, i) => (
                 <Item key={i} item={item} />
@@ -92,7 +94,7 @@ function Item(props) {
         <CardMedia 
           component="img"
           sx = {{width : '35%',height:'100%',display:{
-            xs:'none' , md:'block'
+            xs:'none' , lg:'block'
           }}}
           image={props.item.img}
           alt="Image"
