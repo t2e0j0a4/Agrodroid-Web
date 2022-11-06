@@ -94,7 +94,7 @@ const Events = () => {
                   className="w-[90%] mx-auto flex gap-y-6 md:gap-y-0 md:gap-x-6 flex-col md:flex-row items-center bg-gray-50 justify-between my-6 mb-8 p-4 z-[20] rounded-[20px] shadow-md"
                 >
                   <div
-                    className={`md:w-[75%] w-[100%] gap-y-10 z-[20] text-center order-1 md:order-2`}
+                    className={`md:w-[75%] w-[100%] gap-y-10 z-[20] text-center order-2 md:order-${eve.o1}`}
                   >
                     <span className="font-medium text-lg font-[Poppins] text-center">
                       {eve.info}
