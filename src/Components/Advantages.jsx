@@ -52,7 +52,7 @@ const Advantages = () => {
         ></div>
         <div
           id="sub-head"
-          className="w-80 h-auto break-words rounded font-[Poppins] font-[600] mb-2 ml-4 "
+          className="w-64 h-auto break-words rounded font-[Poppins] font-[600] mb-2 ml-4 "
           data-aos="zoom-in"
           data-aos-duration="900"
         >
@@ -60,7 +60,7 @@ const Advantages = () => {
         </div>
 
         <div className="rows-wrapper w-[100%] h-auto mb-20 md:mb-12">
-          <div className="box-wrapper pl-8 pr-8 md:gap-x-6 pt-16 w-[100%] md:grid md:grid-rows-1 md:grid-cols-3 md:gap-y-8 sm:grid-rows-3 sm:grid-cols-1 sm:gap-y-6">
+          <div className="box-wrapper pl-4 pr-8 md:gap-x-6 pt-16 w-[100%] md:grid md:grid-rows-1 md:grid-cols-3 md:gap-y-8 sm:grid-rows-3 sm:grid-cols-1 sm:gap-y-6">
             {advantages.map((each) => {
               return (
                 <div
