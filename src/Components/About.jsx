@@ -45,7 +45,7 @@ const About = () => {
             id="sub-head"
             className="w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left" data-aos="zoom-in" data-aos-duration="900"
           >
-            What we're doing?
+            What
           </div>
           <div className="flex flex-row items-center justify-center flex-wrap lg:flex-nowrap mt-6 lg:mt-2 mb-2 mx-2">
             <div
