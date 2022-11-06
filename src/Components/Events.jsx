@@ -108,8 +108,8 @@ const Events = () => {
                 </div>
               );
             })}
-            <div className="vertical h-[187vh] md:h-[110vh] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] left-[20%] md:left-[10%]"></div>
-            <div className="vertical h-[187vh] md:h-[110vh] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] right-[20%] md:right-[10%]"></div>
+            <div className="vertical h-[187vh] md:h-[100vh] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] left-[20%] md:left-[10%]"></div>
+            <div className="vertical h-[187vh] md:h-[100vh] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] right-[20%] md:right-[10%]"></div>
           </div>
 
           <div className="animated-arrows relative pt-10 md:pt-0">
