@@ -35,8 +35,8 @@ const advantages = [
 
 const Advantages = () => {
   return (
-    <main id="advantages" className="w-[100%] min-h-screen overflow-x-hidden md:overflow-y-hidden">
-      <section className="w-[100%] pt-16 pl-4">
+    <main id="advantages" className="w-[100%] h-[100%] overflow-x-hidden md:overflow-y-hidden">
+      <section className="w-[100%] h-[100%] pt-16 pl-4">
         <div
           className="text-3xl font-nunitosans mt-4 mb-1 text-[#004346] ml-4 pt-2"
           data-aos="zoom-in"

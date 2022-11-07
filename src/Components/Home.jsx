@@ -80,7 +80,7 @@ const Linker = ({ name, link, icon, open, setOpen , navbar }) => {
       {/* <img src={icon} alt="Nav" className="w-5 h-5 select-none" /> */}
       <a
         id="navhlink" 
-        className={`${navbar ? "text-gray-900" : "text-gray-900 lg:text-gray-100"}`}
+        className={`${navbar ? "text-gray-900" : "text-gray-900 lg:text-gray-100"} hover:scale-[1.10]`}
         href={link}
         onClick={(e) => {
           setOpen(!open);

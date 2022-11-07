@@ -16,9 +16,9 @@ import Partner4 from "../Images/Partner-3.png";
 
 
 const teamMembers = [
-    {key:1, name:"Mahesh Vuppu" , linkedin: "https://linkedin/in/maheshvuppu" , instagram:"https://instagram.com/iam_mahesh___", desc:"Extremely ambitious to accomplish great things through serial entrepreneurship." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
-    {key:2, name:"Adhnan Mohd" , linkedin: "https://linkedin/in/adnan-mohd-548771245" , instagram:"https://instagram.com/addyy.04", desc:"His personal interests include business, marketing, and socialising. He is quite knowledgeable about stocks." , role:"Co-Founder" , animation:"zoom-out" , duration:600},
-    {key:3, name:"Naveen Gadala" , linkedin: "https://linkedin/in/naveengadala-075757254" , instagram:"https://instagram.com/navii._.07/", desc:"He conducts effective market and consumer surveys and has outstanding interpersonal skills." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
+    {key:1, name:"Mahesh Vuppu" , linkedin: "https://linkedin.com/in/maheshvuppu" , instagram:"https://instagram.com/iam_mahesh___", desc:"Extremely ambitious to accomplish great things through serial entrepreneurship." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
+    {key:2, name:"Adhnan Mohd" , linkedin: "https://linkedin.com/in/adnan-mohd-548771245" , instagram:"https://instagram.com/addyy.04", desc:"His personal interests include business, marketing, and socialising. He is quite knowledgeable about stocks." , role:"Co-Founder" , animation:"zoom-out" , duration:600},
+    {key:3, name:"Naveen Gadala" , linkedin: "https://linkedin.com/in/naveengadala-075757254" , instagram:"https://instagram.com/navii._.07/", desc:"He conducts effective market and consumer surveys and has outstanding interpersonal skills." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
     {key:4, name:"Jeshwanth Reddy.K" , linkedin: "https://www.linkedin.com/in/k-jeswanth-reddy-b778b8245" , instagram:"https://instagram.com/jeshwanth_reddyyy", desc:"Enthusiastic, a person who is really passionate, enjoys working with a team, and is punctual" , role:"Co-Founder" , animation:"zoom-out" , duration:600}
 ]
 
