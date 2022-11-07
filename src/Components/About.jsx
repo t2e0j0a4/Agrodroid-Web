@@ -110,8 +110,8 @@ const About = () => {
                     <span className="name m-auto my-2 text-center font-nunitosans text-xl">{each.name}</span>
                     <span className="desc m-auto my-2 text-center w-[90%] font-lignt">{each.desc}</span>
                     <div className="social-media mx-auto my-2 w-[90%] flex text-center justify-center items-center">
-                          <a href={each.linkedin} className="linkedin mx-auto my-2  text-center"><BsLinkedin id="linkedin" className=" w-8 h-auto"/></a>
-                          <a href={each.instagram} className="linkedin mx-auto my-2  text-center"><BsInstagram id="instagram" className="w-8 h-auto"/></a>
+                          <a target="_blank" rel='noreferrer' href={each.linkedin} className="linkedin mx-auto my-2  text-center"><BsLinkedin id="linkedin" className=" w-8 h-auto"/></a>
+                          <a target="_blank" rel='noreferrer' href={each.instagram} className="linkedin mx-auto my-2  text-center"><BsInstagram id="instagram" className="w-8 h-auto"/></a>
                     </div>
                   </div>
                 )
