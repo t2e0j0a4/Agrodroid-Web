@@ -43,7 +43,7 @@ const About = () => {
           ></div>
           <div
             id="sub-head"
-            className="w-32 md:w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left break-words" data-aos="zoom-in" data-aos-duration="900"
+            className="w-36 md:w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left break-words" data-aos="zoom-in" data-aos-duration="900"
           >
             What we're doing?
           </div>

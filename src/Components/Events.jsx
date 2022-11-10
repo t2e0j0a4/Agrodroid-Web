@@ -1,6 +1,5 @@
 import React from "react";
 
-import Eureka from "../Images/Eureka-Eve.png";
 import Build from "../Images/Build2.0-Eve.png";
 import Google from "../Images/GoogleDevelopers-Eve.png";
 import Surge from "../Images/Surge-Eve.png";
@@ -9,14 +8,6 @@ import Eyantra from "../Images/Eyantra-Eve.jpg";
 const events = [
   {
     id: 1,
-    info: "Asia's largest business model competition Cash prizes of INR 65L+",
-    img: Eureka,
-    o1: 1,
-    o2: 2,
-    text: "left",
-  },
-  {
-    id: 2,
     info: "Boeing University Innovation Leadership Program",
     img: Build,
     o1: 2,
@@ -24,7 +15,7 @@ const events = [
     text: "right",
   },
   {
-    id: 3,
+    id: 2,
     info: "Seed fund support up to INR 1cr+ and INR 25 lakhs worth of prizes.",
     img: Eyantra,
     o1: 1,
@@ -32,7 +23,7 @@ const events = [
     text: "left",
   },
   {
-    id: 4,
+    id: 3,
     info: "Start-Up Bootcamp | University Edition",
     img: Google,
     o1: 2,
@@ -40,7 +31,7 @@ const events = [
     text: "right",
   },
   {
-    id: 5,
+    id: 4,
     info: "Surge combines up to $3 million of seed capital with company-building workshops, global immersion trips and support from a community of exceptional founders.",
     img: Surge,
     o1: 1,
@@ -108,8 +99,8 @@ const Events = () => {
                 </div>
               );
             })}
-            <div className="vertical h-[1000px] md:h-[610px] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] left-[20%] md:left-[10%]"></div>
-            <div className="vertical h-[1000px] md:h-[610px] overflow-y-hidden w-10 bg-[#033bbd] bg-opacity-90 absolute top-10 rounded-md z-[-1] right-[20%] md:right-[10%]"></div>
+            <div className="vertical h-[800px] md:h-[410px] overflow-y-hidden w-10 bg-[#d9d9d9] bg-opacity-90 absolute top-10 rounded-md z-[-1] left-[20%] md:left-[10%]"></div>
+            <div className="vertical h-[800px] md:h-[410px] overflow-y-hidden w-10 bg-[#d9d9d9] bg-opacity-90 absolute top-10 rounded-md z-[-1] right-[20%] md:right-[10%]"></div>
           </div>
 
           <div className="animated-arrows relative pt-10 md:pt-0">

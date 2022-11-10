@@ -65,7 +65,7 @@ const Advantages = () => {
               return (
                 <div
                   key={each.id}
-                  className="box w-[90%] mx-auto select-none md:w-[100%] h-[160px] md:h-[150px] bg-green-500 relative shadow-md
+                  className="box w-[86%] mx-auto select-none md:w-[96%] h-[160px] md:h-[150px] bg-[#009900] relative shadow-md
                 rounded-md mb-10 md:mb-12"
                   data-aos={each.animation}
                   data-aos-duration="700"
