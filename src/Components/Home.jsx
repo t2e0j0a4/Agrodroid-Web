@@ -116,7 +116,7 @@ const Linker = ({ name, link, open, setOpen, navbar }) => {
       <a
         className={`navhlink ${
           navbar ? "text-gray-900" : "text-gray-900 lg:text-gray-100"
-        }`}
+        } hover:scale-[1.10]`}
         href={link}
         onClick={(e) => {
           setOpen(!open);
