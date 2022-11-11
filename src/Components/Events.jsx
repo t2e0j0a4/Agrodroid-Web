@@ -99,8 +99,8 @@ const Events = () => {
                 </div>
               );
             })}
-            <div className="vertical h-[800px] md:h-[410px] overflow-y-hidden w-10 bg-[#d9d9d9] bg-opacity-90 absolute top-10 rounded-md z-[-1] left-[20%] md:left-[10%]"></div>
-            <div className="vertical h-[800px] md:h-[410px] overflow-y-hidden w-10 bg-[#d9d9d9] bg-opacity-90 absolute top-10 rounded-md z-[-1] right-[20%] md:right-[10%]"></div>
+            <div className="vertical h-[800px] md:h-[410px] overflow-y-hidden w-10 bg-[#969696] bg-opacity-90 absolute top-10 rounded-md z-[-1] left-[20%] md:left-[10%]"></div>
+            <div className="vertical h-[800px] md:h-[410px] overflow-y-hidden w-10 bg-[#969696] bg-opacity-90 absolute top-10 rounded-md z-[-1] right-[20%] md:right-[10%]"></div>
           </div>
 
           <div className="animated-arrows relative pt-10 md:pt-0">

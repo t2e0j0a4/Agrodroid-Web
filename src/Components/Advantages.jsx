@@ -65,7 +65,7 @@ const Advantages = () => {
               return (
                 <div
                   key={each.id}
-                  className="box w-[86%] mx-auto select-none md:w-[96%] h-[160px] md:h-[150px] bg-[#009900] relative shadow-md
+                  className="box w-[86%] mx-auto select-none md:w-[96%] h-[160px] md:h-[150px] bg-green-500 relative shadow-md
                 rounded-md mb-10 md:mb-12"
                   data-aos={each.animation}
                   data-aos-duration="700"
@@ -76,7 +76,7 @@ const Advantages = () => {
                       {each.head}
                     </span>
                   </div>
-                  <span className="absolute font-leaguespartan text-white text-7xl text-opacity-30 z-[0] bottom-0 right-0 mt-0 mr-8 text-center">
+                  <span className="absolute font-leaguespartan text-white text-6xl lg:text-8xl text-opacity-30 z-[0] bottom-0 right-0 mt-0 mr-8 text-center">
                     {each.id}
                   </span>
                 </div>

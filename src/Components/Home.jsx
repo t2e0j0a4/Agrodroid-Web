@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import "./Home.css";
-
 
 import Logo1 from "../Images/Agrodroid-W.png";
 import Logo2 from "../Images/AgroDroid-B.png";
@@ -98,7 +96,7 @@ const Home = ({ navbar }) => {
           id="home"
           className="w-[100%] h-[100%] absolute top-0 left-0 flex flex-col items-center md:justify-end justify-center flex-wrap lg:flex-nowrap z-[8] pt-16"
         >
-          <h2 className="w-[50%] md:w-[100%] italic text-[12vmin] md:text-[10vmin] font-medium mb-8 text-center mx-auto text-gray-100 pt-80 md:pt-0">
+          <h2 className="w-[50%] lg:w-[100%] italic text-[10vmin] md:text-[9vmin] lg:text-[10vmin] font-medium mb-8 text-center mx-auto text-gray-100 pt-72 md:pt-64 lg:pt-0">
             Makes Farming Easy
           </h2>
         </section>
@@ -113,7 +111,7 @@ const Linker = ({ name, link, open, setOpen, navbar }) => {
   return (
     <li
       id="navigate"
-      className={`flex flex-row items-center justify-center text-xl space-x-1 py-2 pl-6 lg:pl-0`}
+      className={`flex flex-row items-center justify-center text-xl space-x-1 py-2 pl-9 lg:pl-0`}
     >
       <a
         className={`navhlink ${

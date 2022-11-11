@@ -8,7 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea,} from "@mui/material";
 
-import C1 from "../Images/Certificate1.jpg";
+import C1 from "../Images/Certificate.jpg";
 
 var items = [
   {
@@ -99,7 +99,7 @@ function Item(props) {
           image={props.item.img}
           alt="Image"
         />
-        <CardContent sx={{width : {xs:'90%',md:'60%'}}}>
+        <CardContent sx={{width : {xs:'90%',md:'90%',lg:'60%'}}}>
           <Typography gutterBottom variant="h5" component="div" sx={{marginY:'10px' , fontFamily:'Poppins'}}>
             {props.item.name}
           </Typography>

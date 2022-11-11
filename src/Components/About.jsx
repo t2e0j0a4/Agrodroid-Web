@@ -2,7 +2,7 @@ import React  from 'react'
 
 import { BsLinkedin , BsInstagram } from "react-icons/bs";
 
-import about from "../Images/AgroDr.png";
+import about from "../Images/Image1.png";
 import Binoculars from "../Images/Binoculars.png";
 import Target from "../Images/Target.png";
 import Team from "../Images/Team.png";
