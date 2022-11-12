@@ -66,7 +66,7 @@ const FAQ = () => {
           ></div>
           <div
             id="sub-head"
-            className="w-48 md:w-52 h-[0.15rem] rounded break-words font-[Poppins] font-[600] mb-2 ml-4 " data-aos="zoom-in" data-aos-duration="900"
+            className="w-48 md:w-52 h-[0.15rem] text-[#252525] rounded break-words font-[Poppins] font-[600] mb-2 ml-4 " data-aos="zoom-in" data-aos-duration="900"
           >
             Do you have querys?
           </div>

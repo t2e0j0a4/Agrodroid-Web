@@ -13,7 +13,7 @@ const FAQQuestion = ({ title, info }) => {
       >
         <div className="question-section flex items-center justify-between duration-500 my-2 gap-x-7" data-aos="zoom-out" data-aos-offset="100" data-aos-duration="600" data-aos-delay="200">
           <span
-            className="text-lg font-semibold italic font-[Poppins] cursor-pointer select-none"
+            className="text-lg font-semibold italic font-[Poppins] cursor-pointer select-none text-[#252525]"
             onClick={() => {
               setShowInfo(!showInfo);
             }}
@@ -27,15 +27,15 @@ const FAQQuestion = ({ title, info }) => {
             }}
           >
             {showInfo === true ? (
-              <AiOutlineMinus className="hover:scale-110 font-bold text-xl text-[#004346]" />
+              <AiOutlineMinus className="hover:scale-110 font-bold text-xl text-[#252525]" />
             ) : (
-              <AiOutlinePlus className="hover:scale-110 font-bold text-xl text-[#004346]" />
+              <AiOutlinePlus className="hover:scale-110 font-bold text-xl text-[#252525]" />
             )}
           </span>
         </div>
         {showInfo && (
           <div className="answer-section duration-500 transition-all">
-            <p className="select-none duration-500 transition-all text-sm py-2 font-light font-[Poppins]">
+            <p className="select-none duration-500 transition-all text-sm py-2 font-light font-[Poppins] text-[#252525]">
               {info}
             </p>
           </div>

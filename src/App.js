@@ -9,6 +9,7 @@ import Achivements from "./Components/Achivements";
 import Events from "./Components/Events";
 import FAQ from "./Components/FAQ";
 import Footer from "./Components/Footer";
+// import Partners from "./Components/Partners";
 
 const App = () => {
   const [navbar, setNavbar] = useState(false);
@@ -34,6 +35,7 @@ const App = () => {
         <Advantages />
         <Achivements />
         <Events />
+        {/* <Partners/> */}
         <FAQ />
       </div>
       <Footer />

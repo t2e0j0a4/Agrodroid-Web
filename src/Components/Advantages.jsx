@@ -52,7 +52,7 @@ const Advantages = () => {
         ></div>
         <div
           id="sub-head"
-          className="w-64 h-auto break-words rounded font-[Poppins] font-[600] mb-2 ml-4 "
+          className="w-64 h-auto break-words rounded text-[#252525] font-[Poppins] font-[600] mb-2 ml-4 "
           data-aos="zoom-in"
           data-aos-duration="900"
         >
@@ -72,7 +72,7 @@ const Advantages = () => {
                   data-aos-offset="140"
                 >
                   <div className="content z-[10] text-black p-3  flex flex-col items-start justify-around w-[100%] space-y-4">
-                    <span className="break-words head font-leaguespartan font-semibold text-2xl z-[3]">
+                    <span className="break-words head font-leaguespartan font-semibold text-2xl z-[3] text-[#252525]">
                       {each.head}
                     </span>
                   </div>

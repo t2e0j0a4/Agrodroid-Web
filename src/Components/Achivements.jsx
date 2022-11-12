@@ -85,8 +85,8 @@ export default Achivements;
 
 function Item(props) {
   return (
-    <Card className="shadow-xl"
-      sx={{width:{xs:'95%' , md:'70%'} , marginX: 'auto' , display : 'flex' , alignItems:'center', height:'100%' }}
+    <Card className="shadow-md"
+      sx={{width:{xs:'95%' , md:'70%'} , marginX: 'auto' , display : 'flex' , alignItems:'center', height:'100%' }} 
     >
       <CardActionArea sx={{ display: "flex", flexDirection:{
         xs:'column' , md:'row'
@@ -100,13 +100,13 @@ function Item(props) {
           alt="Image"
         />
         <CardContent sx={{width : {xs:'90%',md:'90%',lg:'60%'}}}>
-          <Typography gutterBottom variant="h5" component="div" sx={{marginY:'10px' , fontFamily:'Poppins'}}>
+          <Typography gutterBottom variant="h5" component="div" sx={{marginY:'10px' , fontFamily:'Poppins' , color:'#252525'}}>
             {props.item.name}
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{marginY:'10px', fontFamily : 'Poppins'}}>
+          <Typography variant="body2" color="text.secondary" sx={{marginY:'10px', fontFamily : 'Poppins' , color:'#252525'}}>
             {props.item.description}
           </Typography>
-          <Typography variant="body1" component="div" sx={{marginY:'10px', fontFamily : 'Poppins'}}>
+          <Typography variant="body1" component="div" sx={{marginY:'10px', fontFamily : 'Poppins' , color:'#252525'}}>
             {props.item.date}
           </Typography>
         </CardContent>

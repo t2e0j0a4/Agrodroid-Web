@@ -31,7 +31,7 @@ const About = () => {
       
         {/* About Us Section */}
         <section
-          className="w-[100%] h-[100%] text-black px-4 pb-2 pt-16"
+          className="w-[100%] h-[100%] text-[#252525] px-4 pb-2 pt-16"
           
         >
           <div className="text-3xl font-nunitosans mt-4 my-2 text-[#004346] ml-4 pt-2 text-left" data-aos="zoom-in" data-aos-duration="600">
@@ -43,13 +43,13 @@ const About = () => {
           ></div>
           <div
             id="sub-head"
-            className="w-36 md:w-40 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left break-words" data-aos="zoom-in" data-aos-duration="900"
+            className="w-36 md:w-40 h-[0.15rem] text-[#252525] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left break-words" data-aos="zoom-in" data-aos-duration="900"
           >
             What we're doing?
           </div>
           <div className="flex flex-row items-center justify-center flex-wrap lg:flex-nowrap mt-6 lg:mt-2 mb-2 mx-2">
             <div
-              className="matter w-[100%] lg:w-[45%] text-xl ml-4 order-2 lg:order-1 text-center lg:text-left text-black font-semibold"
+              className="matter w-[100%] lg:w-[45%] text-xl ml-4 order-2 lg:order-1 text-center lg:text-left text-[#252525] font-semibold"
               id="text-image" data-aos="zoom-out" data-aos-duration="800"
             >
               <span id='agrodroid' className="text-4xl font-leaguespartan font-bold text-center">
@@ -71,7 +71,7 @@ const About = () => {
         {/* About Us Section Ends */}
 
         {/* Vision and Mission Starts */}
-        <section id="vision-and-mission" className="w-[100%] min-h-screen px-4 pb-2 pt-16">
+        <section id="vision-and-mission" className="w-[100%] min-h-screen px-4 pb-2 pt-16 text-[#252525]">
             <div className="main-head-v-m text-2xl font-nunitosans font-semibold text-[#004346] text-center" data-aos="zoom-in" data-aos-duration="400">Vision and Mission</div>
             <div data-aos="zoom-in" data-aos-duration="700" className="w-28 h-[0.15rem] bg-[#f29f05] rounded text-center m-auto mb-4 mt-2"></div>
             <div className="outer-box  flex flex-row my-3 justify-center items-center flex-wrap md:flex-nowrap space-y-20 md:space-y-0">
@@ -80,7 +80,7 @@ const About = () => {
                     <div className="inner-head text-lg font-bold my-6 italic text-center font-leaguespartan">Vision</div>
                     <div className="sub-head-line text-md w-[70%] text-center font-semibold">Enlight the technology in farming to make it independent of labour.</div>
               </div>
-              <div className="line w-1 h-96 bg-black rounded hidden md:block"></div>
+              <div className="line w-1 h-96 bg-[#252525] rounded hidden md:block"></div>
               <div className="inner w-[85%] md:w-[50%] h-[auto] flex flex-col items-center justify-center">
                     <img src={Target} alt="Mission" className="w-[60%] md:w-[50%] lg:w-[40%] " data-aos="zoom-out" data-aos-duration="800"/>
                     <div className="inner-head text-lg font-bold my-6 italic text-center font-leaguespartan">Mission</div>

@@ -63,7 +63,7 @@ const Events = () => {
           ></div>
           <div
             id="sub-head"
-            className="w-52 h-[0.15rem] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left"
+            className="w-52 h-[0.15rem] rounded font-[Poppins] text-[#252525] font-[600] mb-2 ml-4 text-left"
             data-aos="zoom-in"
             data-aos-duration="900"
           >
@@ -72,35 +72,35 @@ const Events = () => {
 
           <div
             id="event-scroll"
-            className="eventdisplay overflow-y-scroll w-[90%] md:w-[70%] mt-14 md:mt-12 h-[400px] bg-white p-3 mb-16 md:mb-14 mx-auto shadow-xl relative z-[10] rounded-lg"
+            className="eventdisplay overflow-y-scroll w-[90%] md:w-[75%] xl:w-[68%] mt-14 md:mt-12 h-[450px] bg-white p-3 mb-16 md:mb-14 mx-auto shadow-md relative z-[10] rounded-lg"
             data-aos="zoom-out"
             data-aos-duration="900"
             data-aos-offset="300"
           >
             {events.map((eve) => {
               return (
-                <div
-                  id="single-event"
-                  key={eve.id}
-                  className="w-[90%] mx-auto flex gap-y-4 md:gap-y-0 md:gap-x-6 flex-col md:flex-row items-center bg-gray-50 justify-between my-6 mb-8 p-4 z-[20] rounded-[20px] shadow-md"
-                >
+                <>
                   <div
-                    className={`md:w-[75%] w-[100%] gap-y-10 z-[20] text-center order-2 md:order-${eve.o1}`}
+                    id="single-event"
+                    key={eve.id}
+                    className="w-[90%] mx-auto flex gap-y-4 md:gap-y-0 md:gap-x-6 flex-col md:flex-row items-center bg-gray-50 justify-between my-6 mb-8 p-4 z-[20] rounded-[10px] shadow-sm"
                   >
-                    <span className="font-medium text-lg font-[Poppins] text-center">
-                      {eve.info}
-                    </span>
+                    <div
+                      className={`md:w-[75%] w-[100%] gap-y-10 z-[20] text-center order-2 md:order-${eve.o1}`}
+                    >
+                      <span className="font-medium text-lg font-[Poppins] text-center text-[#252525]">
+                        {eve.info}
+                      </span>
+                    </div>
+                    <img
+                      src={eve.img}
+                      alt="Event"
+                      className={`w-[80%] md:w-[25%] object-cover order-1 md:order-${eve.o2}`}
+                    />
                   </div>
-                  <img
-                    src={eve.img}
-                    alt="Event"
-                    className={`w-[80%] md:w-[25%] object-cover order-1 md:order-${eve.o2}`}
-                  />
-                </div>
+                </>
               );
             })}
-            <div className="vertical h-[800px] md:h-[410px] overflow-y-hidden w-10 bg-[#969696] bg-opacity-90 absolute top-10 rounded-md z-[-1] left-[20%] md:left-[10%]"></div>
-            <div className="vertical h-[800px] md:h-[410px] overflow-y-hidden w-10 bg-[#969696] bg-opacity-90 absolute top-10 rounded-md z-[-1] right-[20%] md:right-[10%]"></div>
           </div>
 
           <div className="animated-arrows relative pt-10 md:pt-0">

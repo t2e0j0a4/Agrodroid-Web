@@ -16,7 +16,7 @@ const Footer = () => {
                 <a href='https://twitter.com/AgroDroid' target="_blank" rel="noreferrer" className="w-[50%]"><BsTwitter id='twitter' className="w-8 h-8"/></a>
             </div>
         </section>
-        <div className="more flex w-[100%] mx-auto text-center justify-center text-2xl font-[Poppins] text-gray-600 font-semibold break-words">
+        <div className="more flex w-[100%] mx-auto text-center justify-center text-2xl font-[Poppins] text-[#252525] font-medium break-words mb-2">
           Production by Voltz's Industries &reg;
         </div>
     </>
