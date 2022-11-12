@@ -1,0 +1,21 @@
+#photo{
+    animation-name: imageChange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+@keyframes imageChange {
+    0%{
+        background-image: url('../Images/PG1.jpg');
+        background-position: bottom;
+    }
+    
+    100%{
+        background-image: url('../Images/PG1.jpg');
+        background-position: bottom;
+    }
+}
