@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import Logo1 from "../Images/Agrodroid-W.png";
-import Logo2 from "../Images/AgroDroid-B.png";
+import Logo1 from "../Images/AgroDr-B.png";
+import Logo2 from "../Images/AgroDr-W.png";
 
 import BG from "../Images/Rover.mp4";
 
