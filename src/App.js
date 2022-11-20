@@ -1,16 +1,7 @@
 import React, { useState } from "react";
 
 // Component Imports
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Services from "./Components/Services";
-import Advantages from "./Components/Advantages";
-import Achivements from "./Components/Achivements";
-import Events from "./Components/Events";
-import PhotoGallery from "./Components/PhotoGallery";
-// import Partners from "./Components/Partners";
-import FAQ from "./Components/FAQ";
-import Footer from "./Components/Footer";
+import { Home , About , Services , Advantages , Achivements , Events , PhotoGallery , FAQ , Footer } from "./Components";
 
 const App = () => {
   const [navbar, setNavbar] = useState(false);

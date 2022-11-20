@@ -91,7 +91,7 @@ function Item(props) {
       <CardActionArea sx={{ display: "flex", flexDirection:{
         xs:'column' , md:'row'
       } , alignItems:'center' ,justifyContent :'space-between' , height:'100%'}}>
-        <CardMedia 
+        <CardMedia loading="lazy" 
           component="img"
           sx = {{width : '35%',height:'100%',display:{
             xs:'none' , lg:'block'

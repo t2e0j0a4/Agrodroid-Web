@@ -57,7 +57,7 @@ const About = () => {
               </span>{" "}
               is an autonomous rover robot capable of sowing seeds, weeding fields, fertilising crops using precision spraying and solid fertilisation, and harvesting cotton.
             </div>
-            <img
+            <img loading='lazy'
               className="image-about lg:w-[55%] w-[100%] mr-2 order-1 lg:order-2"
               src={about}
               alt="about-us" data-aos="zoom-out" data-aos-duration="800"
@@ -76,13 +76,13 @@ const About = () => {
             <div data-aos="zoom-in" data-aos-duration="700" className="w-28 h-[0.15rem] bg-[#f29f05] rounded text-center m-auto mb-4 mt-2"></div>
             <div className="outer-box  flex flex-row my-3 justify-center items-center flex-wrap md:flex-nowrap space-y-20 md:space-y-0">
               <div className="inner w-[90%] md:w-[50%] h-[auto] flex flex-col items-center justify-center">
-                    <img src={Binoculars} alt="Vision" className="w-[40%]" data-aos="zoom-out" data-aos-duration="800"/>
+                    <img  loading='lazy' src={Binoculars} alt="Vision" className="w-[40%]" data-aos="zoom-out" data-aos-duration="800"/>
                     <div className="inner-head text-lg font-bold my-6 italic text-center font-leaguespartan">Vision</div>
                     <div className="sub-head-line text-md w-[70%] text-center font-semibold">Enlight the technology in farming to make it independent of labour.</div>
               </div>
               <div className="line w-1 h-96 bg-[#252525] rounded hidden md:block"></div>
               <div className="inner w-[85%] md:w-[50%] h-[auto] flex flex-col items-center justify-center">
-                    <img src={Target} alt="Mission" className="w-[60%] md:w-[50%] lg:w-[40%] " data-aos="zoom-out" data-aos-duration="800"/>
+                    <img  loading='lazy' src={Target} alt="Mission" className="w-[60%] md:w-[50%] lg:w-[40%] " data-aos="zoom-out" data-aos-duration="800"/>
                     <div className="inner-head text-lg font-bold my-6 italic text-center font-leaguespartan">Mission</div>
                     <div className="sub-head-line text-md w-[70%] text-center font-semibold">To offer technical solutions for smart agriculture as a service to grow up its Production quality and revenues for farmers with 0% mental stress.</div>
               </div>
@@ -105,7 +105,7 @@ const About = () => {
               teamMembers.map((each)=>{
                 return (
                   <div key={each.key} className="each-card flex flex-col w-[280px]  hover:scale-[1.05] hover:duration-300 hover:ease-in-out py-3 m-auto" data-aos={each.animation} data-aos-offset="250" data-aos-duration={each.duration}>
-                    <img src={each.name === "Mahesh Vuppu" ? Partner1 : each.name === "Adhnan Mohd" ? Partner2 : each.name === "Jeshwanth Reddy.K" ? Partner3 : each.name === "Naveen Gadala" ? Partner4 : ""} alt="member" className="object-cover my-1 w-[80%] h-[220px] rounded-[50%] m-auto "/>
+                    <img loading='lazy' src={each.name === "Mahesh Vuppu" ? Partner1 : each.name === "Adhnan Mohd" ? Partner2 : each.name === "Jeshwanth Reddy.K" ? Partner3 : each.name === "Naveen Gadala" ? Partner4 : ""} alt="member" className="object-cover my-1 w-[80%] h-[220px] rounded-[50%] m-auto "/>
                     <span className="post m-auto my-2 text-center italic">{each.role}</span>
                     <span className="name m-auto my-2 text-center font-nunitosans text-xl">{each.name}</span>
                     <span className="desc m-auto my-2 text-center w-[90%] font-lignt">{each.desc}</span>

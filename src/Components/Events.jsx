@@ -92,7 +92,7 @@ const Events = () => {
                         {eve.info}
                       </span>
                     </div>
-                    <img
+                    <img loading='lazy'
                       src={eve.img}
                       alt="Event"
                       className={`w-[80%] md:w-[25%] object-cover order-1 md:order-${eve.o2}`}
