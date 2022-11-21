@@ -1,16 +1,15 @@
 .navhlink{
     background-color: transparent;
     padding: 4px 3px;
-    border-radius: 7px;
 }
 
 .navhlink:hover{
     transform: scale(1.10);
-    color: rgba(0, 237, 0, 0.741);
-    /* border-bottom:1px solid red */
+    color: rgb(18, 96, 0);
+    border-bottom:1px solid red
 }
 
-.navhlink.active{
-    /* background-color: rgba(11, 212, 11, 0.774); */
-    color: #fff;
+.navhlink:focus {
+    color: rgb(18, 96, 0);
+    border-bottom:1px solid red
 }
