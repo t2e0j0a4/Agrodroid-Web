@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Component Imports
-import { Home , About , Services , Advantages , Achivements , Events , PhotoGallery , FAQ , Footer } from "./Components";
+import { Home , About , Services , Advantages , Achivements , Partners , PhotoGallery , FAQ , Footer } from "./Components";
 
 const App = () => {
   const [navbar, setNavbar] = useState(false);
@@ -26,8 +26,8 @@ const App = () => {
         <Services />
         <Advantages />
         <Achivements />
-        <Events />
-        {/* <Partners/> */}
+        {/* <Events /> */}
+        <Partners/>
         <PhotoGallery/>
         <FAQ />
       </div>
