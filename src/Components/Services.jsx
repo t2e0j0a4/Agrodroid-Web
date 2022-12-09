@@ -1,6 +1,6 @@
 import React from "react";
 
-import services from "../Images/S-2.png";
+import services from "../Images/Services_Main.png";
 
 const Services = () => {
   return (

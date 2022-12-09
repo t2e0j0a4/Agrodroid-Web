@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
         </section>
         <div className="more flex w-[100%] mx-auto text-center justify-center text-2xl font-[Poppins] text-[#252525] font-medium break-words mb-2">
-          Production by Voltz's Industries &reg;
+          Production by AgroDroid &reg;
         </div>
     </>
   )

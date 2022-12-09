@@ -1,13 +1,26 @@
 import React from 'react'
-import thub from "../Images/T-hub.png";
-import orbit from "../Images/The Eco-orbit.png";
+
+import aws from "../Images/aws Activate.png"
+import orbit from "../Images/Eco-Orbit.png";
+import eDAM from "../Images/eDAM.png";
 
 import {SiHandshake} from "react-icons/si";
 
 const partners = [
-  {id : 1 , pic : thub , like:'in'},
-  {id : 2 , pic : orbit , like:'out'}
+  {id : 1 , pic : aws , desc : 'AWS credits of $5000 were received from Eureka2022.' , like:'in'},
+  {id : 2 , pic : orbit , desc : 'Technical assistance in the integration of deep learning into robots' , like:'out'},
+  {id : 3 , pic : eDAM , desc : 'e-DAM | Talent acquisition partner' , like : 'in'}
 ];
+
+
+const PartnerInfo = ({partnerLogo,partnerDesc}) => {
+  return (
+    <div id='partnerInfo' className='flex flex-col items-center justify-center w-[70%] lg:w-[100%] h-[300px] p-4 rounded-lg bg-gray-50 hover:scale-[1.05] gap-y-4'>
+      <img src={partnerLogo} alt="Partners-Tag" className='w-[200px] rounded-[50%]'/>
+      <span className='text-center font-[Poppins] text-lg font-light'>{partnerDesc}</span>
+    </div>
+  )
+}
 
 const Partners = () => {
   return (
@@ -29,15 +42,16 @@ const Partners = () => {
           >
             We're better together.
           </div>
-            <div className="partners flex flex-row justify-around flex-wrap py-8">
-                {
-                  partners.map((img)=>{
-                    return (
-                      <img key={img.id} src={img.pic} alt={`Partner-${img.id}`} className='w-[100px] pb-0 sm:pb-2' data-aos={`zoom-${img.like}`} data-aos-duration="800" data-aos-offset="200"/>
-                    )
-                  })
-                }
-            </div>
+          
+          <div id="morePartners" className='flex flex-row lg:flex-nowrap flex-wrap items-center justify-center gap-x-3 gap-y-6 my-16'>
+            {
+              partners.map((partner)=>{
+                return (
+                  <PartnerInfo key={partner.id} partnerLogo={partner.pic} partnerDesc={partner.desc}/>
+                )
+              })
+            }
+          </div>
 
         </section>
     </>
