@@ -55,7 +55,7 @@ const About = () => {
               <span id='agrodroid' className="text-4xl font-leaguespartan font-bold text-center">
                 AgroDroid
               </span>{" "}
-              is an autonomous rover robot capable of sowing seeds, weeding fields, fertilising crops using precision spraying and solid fertilisation, and harvesting cotton.
+              is an autonomous rover robot capable of Ploughing, sowing seeds, weeding fields, fertilising crops using precision spraying and solid fertilisation, and harvesting cotton.
             </div>
             <img loading='lazy'
               className="image-about lg:w-[55%] w-[100%] mr-2 order-1 lg:order-2"
