@@ -17,7 +17,7 @@ import Partner4 from "../Images/Partner-3.png";
 
 const teamMembers = [
     {key:1, name:"Mahesh Vuppu" , linkedin: "https://linkedin.com/in/maheshvuppu" , instagram:"https://instagram.com/iam_mahesh___", desc:"Extremely ambitious to accomplish great things through serial entrepreneurship." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
-    {key:2, name:"Adhnan Mohd" , linkedin: "https://linkedin.com/in/adnan-mohd-548771245" , instagram:"https://instagram.com/addyy.04", desc:"His personal interests include business, marketing, and socialising. He is quite knowledgeable about stocks." , role:"Co-Founder" , animation:"zoom-out" , duration:600},
+    {key:2, name:"Adhnan Mohd" , linkedin: "https://linkedin.com/in/adnan-mohd-548771245" , instagram:"https://instagram.com/addyy.04", desc:"His personal interests include business, marketing, and socializing. He is quite knowledgeable about stocks." , role:"Co-Founder" , animation:"zoom-out" , duration:600},
     {key:3, name:"Naveen Gadala" , linkedin: "https://linkedin.com/in/naveengadala-075757254" , instagram:"https://instagram.com/navii._.07/", desc:"He conducts effective market and consumer surveys and has outstanding interpersonal skills." , role:"Co-Founder" , animation:"zoom-in" , duration:800},
     {key:4, name:"Jeshwanth Reddy.K" , linkedin: "https://www.linkedin.com/in/k-jeswanth-reddy-b778b8245" , instagram:"https://instagram.com/jeshwanth_reddyyy", desc:"Enthusiastic, a person who is really passionate, enjoys working with a team, and is punctual" , role:"Co-Founder" , animation:"zoom-out" , duration:600}
 ]
@@ -43,7 +43,7 @@ const About = () => {
           ></div>
           <div
             id="sub-head"
-            className="w-36 md:w-40 h-[0.15rem] text-[#252525] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left break-words" data-aos="zoom-in" data-aos-duration="900"
+            className="w-40 md:w-52 h-[0.15rem] text-[#252525] rounded font-[Poppins] font-[600] mb-2 ml-4 text-left break-words" data-aos="zoom-in" data-aos-duration="900"
           >
             What we're doing?
           </div>
@@ -55,7 +55,7 @@ const About = () => {
               <span id='agrodroid' className="text-4xl font-leaguespartan font-bold text-center">
                 AgroDroid
               </span>{" "}
-              is an autonomous rover robot capable of Ploughing, sowing seeds, weeding fields, fertilising crops using precision spraying and solid fertilisation, and harvesting cotton.
+              is an autonomous rover robot capable of Ploughing, sowing seeds, weeding fields, fertilizing crops using precision spraying and solid fertilization, and harvesting cotton.
             </div>
             <img loading='lazy'
               className="image-about lg:w-[55%] w-[100%] mr-2 order-1 lg:order-2"

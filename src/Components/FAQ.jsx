@@ -68,7 +68,7 @@ const FAQ = () => {
             id="sub-head"
             className="w-48 md:w-52 h-[0.15rem] text-[#252525] rounded break-words font-[Poppins] font-[600] mb-2 ml-4 " data-aos="zoom-in" data-aos-duration="900"
           >
-            Do you have querys?
+            Do you have queries?
           </div>
           <div className="questions w-[90%] lg:w-[60%] mx-auto mt-8 mb-4 bg-gray-50 duration-500">
             {question.map((q) => {

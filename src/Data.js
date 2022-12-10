@@ -3,7 +3,7 @@ const questions = [
       id: 1,
       title: "What's the price point for offered services ?",
       info:
-        "Offering services including sowing (INR 500/- per cycle), weeding (INR 2000/- per cycle), fertilising (solid and liquid, INR 1000/- per cycle), and cotton harvesting (INR 2000/- per cycle)",
+        "Offering services including sowing (INR 500/- per cycle), weeding (INR 2000/- per cycle), fertilizing (solid and liquid, INR 1000/- per cycle), and cotton harvesting (INR 2000/- per cycle)",
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ const questions = [
     },
     {
       id: 3,
-      title: 'How long it takes to presion spraying?',
+      title: 'How long it takes to precison spraying?',
       info:
       "For 2 acres of land in 1.5 hour.",
     },

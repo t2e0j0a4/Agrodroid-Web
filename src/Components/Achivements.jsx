@@ -14,7 +14,7 @@ var items = [
   {
     id:1,
     name: "Build Your Brand",
-    description: "We Aquired 1st First Prize in Build Your Brand Competition Conducted by AIC T-Hub in Collabration with Institute of Aeronautical Engineering (IARE).",
+    description: "We Acquired 1st First Prize in Build Your Brand Competition Conducted by AIC T-Hub in Collaboration with Institute of Aeronautical Engineering (IARE).",
     date: '28/10/2022',
     img:C1
   },
