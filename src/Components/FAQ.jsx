@@ -39,11 +39,6 @@ const FAQ = () => {
           title: 'Supported crops ? ',
           info:
             "Cotton and Non-Leafy Vegetables",
-        },{
-          id: 11,
-          title: 'Is this environmental friendly ?',
-          info:
-            "Yes, It's CO2 Free",
         }
       ]);
     }

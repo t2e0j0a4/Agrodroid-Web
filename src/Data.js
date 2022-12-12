@@ -1,9 +1,9 @@
 const questions = [
     {
       id: 1,
-      title: "What's the price point for offered services ?",
+      title: 'Is this environmental friendly ?',
       info:
-        "Offering services including sowing (INR 500/- per cycle), weeding (INR 2000/- per cycle), fertilizing (solid and liquid, INR 1000/- per cycle), and cotton harvesting (INR 2000/- per cycle)",
+        "Yes, It's CO2 Free",
     },
     {
       id: 2,
