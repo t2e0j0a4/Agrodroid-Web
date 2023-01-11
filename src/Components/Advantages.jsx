@@ -18,7 +18,7 @@ const advantages = [
   },
   {
     id: 4,
-    head: "Boosts Agriculturalists Income by 40%",
+    head: "81.45% Commercial & 76.06% Traditional Margins.",
     animation: "zoom-out",
   },
   {
