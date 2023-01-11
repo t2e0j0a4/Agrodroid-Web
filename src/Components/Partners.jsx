@@ -15,9 +15,9 @@ const partners = [
 
 const PartnerInfo = ({partnerLogo,partnerDesc}) => {
   return (
-    <div id='partnerInfo' className='flex flex-col items-center justify-center w-[90%] lg:w-[100%] h-[300px] p-3 rounded-lg bg-gray-50 hover:scale-[1.05] gap-y-4'>
+    <div id='partnerInfo' className="flex flex-col items-center justify-center w-[90%] lg:w-[100%] h-[300px] p-3 bg-white hover:rounded-[6px] hover:scale-[1.10] hover:bg-gray-50 gap-y-4 hover:shadow-lg">
       <img src={partnerLogo} alt="Partners-Tag" className='w-[200px] rounded-[50%]'/>
-      <span className='text-center font-[Poppins] text-lg font-light'>{partnerDesc}</span>
+      <span className='text-center font-[Poppins] text-lg font-semibold'>{partnerDesc}</span>
     </div>
   )
 }
@@ -43,7 +43,7 @@ const Partners = () => {
             We're better together.
           </div>
           
-          <div id="morePartners" className='flex flex-row lg:flex-nowrap flex-wrap items-center justify-center gap-x-3 gap-y-6 my-16'>
+          <div id="morePartners" className='flex flex-row lg:flex-nowrap flex-wrap items-center justify-center gap-x-5 gap-y-6 my-16 w-[96%] mx-auto'>
             {
               partners.map((partner)=>{
                 return (
