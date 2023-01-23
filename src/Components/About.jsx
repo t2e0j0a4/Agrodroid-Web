@@ -120,13 +120,17 @@ const About = () => {
               <div className="main-head-v-m text-2xl font-nunitosans font-semibold text-[#004346] text-center" data-aos="zoom-in" data-aos-duration="400">Product Mentor</div>
               <div data-aos="zoom-in" data-aos-duration="700" className="w-28 h-[0.15rem] bg-[#f29f05] rounded text-center m-auto mb-4 mt-2"></div>
             </div>
-            <div className="flex items-center justify-center flex-col w-[280px] sm:w-[300px] gap-y-2 bg-white py-5 px-3 rounded-[8px] hover:shadow-md hover:scale-105 transition-all duration-700" data-aos="zoom-out" data-aos-duration="900" data-aos-offset="250">
+            <div className="flex items-center justify-center flex-col w-[280px] sm:w-[300px] gap-y-2 bg-gray-50 hover:bg-white py-5 px-3 rounded-[8px] hover:shadow-md hover:scale-[1.07] transition-all duration-700" >
               <img src={manojkumar} alt="Product Mentor" className='w-[80%] object-cover rounded-[50%]'/>
               <span className='font-leaguespartan w-[96%] mx-auto text-center text-[16px]'>Manoj Kumar Bada Ghar Wala</span>
               <span className='font-[Poppins] text-[14px] italic'>Product Development Mentor</span>
               <div className="flex flex-col items-center justify-center text-center">
                 <span className='font-[Poppins] text-[14px]'>Director, Badagharwala Technologies</span>
-                <span className='font-[Poppins] text-[14px]'>Mentor at T-hub, ALEAP WE HUB, BVIC, AIM, CIES, UNIDO</span>
+                <span className='font-[Poppins] text-[14px]'>Mentor at T-hub, ALEAP WE HUB, BVIC, AIM, CIES, UNIDO-FLCTD</span>
+              </div>
+              <div className="w-[100%] flex flex-row items-center justify-between">
+                <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/manoj-kumar-bada-ghar-wala" className="linkedin mx-auto my-2  text-center"><BsLinkedin id="linkedin" className=" w-8 h-auto"/></a>
+                <a target="_blank" rel='noreferrer' href="https://instagram.com/bgwtech?igshid=ZDdkNTZiNTM=" className="linkedin mx-auto my-2  text-center"><BsInstagram id="instagram" className="w-8 h-auto"/></a>
               </div>
             </div>
           </div>  
