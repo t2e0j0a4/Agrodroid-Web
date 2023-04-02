@@ -1,15 +1,22 @@
-.navhlink{
+/* .navigate {
+    transition: all 0.4s linear;
+}
+
+.navigate:hover {
+    transform: scale(1.09);
+} */
+
+/* .navhlink{
     background-color: transparent;
     padding: 4px 3px;
 }
 
 .navhlink:hover{
-    transform: scale(1.10);
     color: rgb(18, 96, 0);
     border-bottom:1px solid red
-}
+} */
 
-.navhlink:focus {
+/* .navhlink:focus {
     color: rgb(18, 96, 0);
     border-bottom:1px solid red
-}
+} */

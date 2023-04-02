@@ -5,6 +5,8 @@ import Logo2 from "../Images/AgroDr-W.png";
 
 import BG from "../Images/Agro Rover.mp4";
 
+import './Home.css';
+
 let Links = [
   { id: 1, name: "Home", link: "#home" },
   { id: 2, name: "About", link: "#about-us" },

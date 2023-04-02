@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea,} from "@mui/material";
 
 import C1 from "../Images/Certificate.jpg";
+import C2 from "../Images/Clean India Republic Day Instagram Story.png";
 
 var items = [
   {
@@ -18,6 +19,14 @@ var items = [
     date: '28/10/2022',
     img:C1
   },
+  {
+    id:2,
+    name: "Startup India Recognition",
+    description: "Recognized by Department for Promotion of Industry and Internal Trade(DPIIT), Govt of India",
+    date: '27/12/2022',
+    img:C2
+  },
+  
 ];
 
 const Achivements = () => {
