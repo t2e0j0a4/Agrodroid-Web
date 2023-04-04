@@ -15,7 +15,7 @@ const partners = [
 
 const PartnerInfo = ({partnerLogo,partnerDesc}) => {
   return (
-    <div id='partnerInfo' className="flex flex-col items-center justify-center w-[90%] lg:w-[100%] h-[300px] p-3 bg-white hover:rounded-[6px] hover:scale-[1.10] hover:bg-gray-50 gap-y-4 hover:shadow-lg">
+    <div id='partnerInfo' className="flex flex-col items-center justify-center w-[90%] lg:w-[100%] h-[300px] p-3 bg-white rounded-[6px] hover:rounded-[20px] hover:scale-[1.10] transition-all duration-300 hover:bg-gray-50 gap-y-4 hover:shadow-lg">
       <img src={partnerLogo} alt="Partners-Tag" className='w-[200px] rounded-[50%]'/>
       <span className='text-center font-[Poppins] text-lg font-semibold'>{partnerDesc}</span>
     </div>

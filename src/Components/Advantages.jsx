@@ -60,23 +60,23 @@ const Advantages = () => {
         </div>
 
         <div className="rows-wrapper w-[100%] h-auto mb-20 md:mb-12">
-          <div className="box-wrapper pl-4 pr-8 md:gap-x-6 pt-16 w-[100%] md:grid md:grid-rows-1 md:grid-cols-3 md:gap-y-8 sm:grid-rows-3 sm:grid-cols-1 sm:gap-y-6">
+          <div className="box-wrapper px-3 md:pl-4 md:pr-8 md:gap-x-6 pt-16 w-[100%] md:grid md:grid-rows-1 md:grid-cols-3 md:gap-y-8 sm:grid-rows-3 sm:grid-cols-1 sm:gap-y-6">
             {advantages.map((each) => {
               return (
                 <div
                   key={each.id}
-                  className="box w-[98%] mx-auto select-none md:w-[94%] h-[180px] md:h-[150px] bg-green-500 relative shadow-md
+                  className="box w-[100%] mx-auto select-none md:w-[94%] h-[180px] md:h-[150px] bg-green-500 relative shadow-md
                 rounded-md mb-10 md:mb-12"
                   data-aos={each.animation}
                   data-aos-duration="700"
                   data-aos-offset="140"
                 >
                   <div className="content z-[10] text-black p-3  flex flex-col items-start justify-around w-[100%] space-y-4">
-                    <span className="break-words head font-leaguespartan font-semibold text-2xl z-[3] text-[#252525]">
+                    <span className="break-words head font-leaguespartan font-semibold text-lg sm:text-2xl z-[3] text-[#252525]">
                       {each.head}
                     </span>
                   </div>
-                  <span className="absolute font-leaguespartan text-white text-6xl lg:text-8xl text-opacity-30 z-[0] bottom-0 right-0 mt-0 mr-8 text-center">
+                  <span className="absolute font-leaguespartan text-white text-5xl lg:text-7xl text-opacity-30 z-[0] bottom-0 right-0 mt-0 mr-8 text-center">
                     {each.id}
                   </span>
                 </div>
