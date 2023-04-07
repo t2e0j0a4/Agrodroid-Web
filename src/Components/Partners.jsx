@@ -9,17 +9,27 @@ import {SiHandshake} from "react-icons/si";
 const partners = [
   {id : 1 , pic : aws , desc : 'AWS credits of $5000 were received from Eureka2022.' , like:'in'},
   {id : 2 , pic : orbit , desc : 'Technical assistance in the integration of deep learning into robots' , like:'out'},
-  {id : 3 , pic : eDAM , desc : 'e-DAM | Talent acquisition partner' , like : 'in'}
+  {id : 3 , pic : eDAM , desc : 'e-DAM | Talent acquisition partner' , like : 'in', redirect : "https://edam.tech/"}
 ];
 
 
-const PartnerInfo = ({partnerLogo,partnerDesc}) => {
+const PartnerInfo = ({partner}) => {
+  const {pic, desc, redirect} = partner;
   return (
-    <div id='partnerInfo' className="flex flex-col items-center justify-center w-[90%] lg:w-[100%] h-[300px] p-3 bg-white rounded-[6px] hover:rounded-[20px] hover:scale-[1.10] transition-all duration-300 hover:bg-gray-50 gap-y-4 hover:shadow-lg">
-      <img src={partnerLogo} alt="Partners-Tag" className='w-[200px] rounded-[50%]'/>
-      <span className='text-center font-[Poppins] text-lg font-semibold'>{partnerDesc}</span>
+    <div
+      id="partnerInfo"
+      className="flex flex-col items-center justify-center w-[90%] lg:w-[100%] h-[300px] p-3 bg-white rounded-[6px] hover:rounded-[20px] hover:scale-[1.10] transition-all duration-300 hover:bg-gray-50 gap-y-4 hover:shadow-lg"
+    >
+      {redirect ? (
+        <a href={redirect} target="_blank" rel="noreferrer" className='w-[200px]'><img src={pic} alt="Partners-Tag" className='w-[100%] rounded-[50%]'/></a>
+      ) : (
+        <img src={pic} alt="Partners-Tag" className="w-[200px] rounded-[50%]" />
+      )}
+      <span className="text-center font-[Poppins] text-lg font-semibold">
+        {desc}
+      </span>
     </div>
-  )
+  );
 }
 
 const Partners = () => {
@@ -47,7 +57,7 @@ const Partners = () => {
             {
               partners.map((partner)=>{
                 return (
-                  <PartnerInfo key={partner.id} partnerLogo={partner.pic} partnerDesc={partner.desc}/>
+                  <PartnerInfo key={partner.id} partner={partner}/>
                 )
               })
             }
